@@ -4,6 +4,13 @@
           box-sizing: border-box;
 }
 
+.hero-image {
+  background: url(home-3wAI.jpg);
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
 main {
   background-color: #ffffff;
   font-size: 1rem;
@@ -18,9 +25,10 @@ main {
   height: 100px;
 }
 
-element.style {
-  position: relative;
-  top: 0px;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #666;
 }
 
 .topnav {
@@ -47,9 +55,19 @@ element.style {
 }
 
 .main-navigation {
-  background-color: #333645;
-  color: white;
-  position: relative;
+  background-color: #777;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: o auto;
+}
+
+.flex-container {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,13 +75,12 @@ element.style {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
+  border-right: 1px solid black;
 }
 
-.main-navigation:hover {
-  background-color: #777;
+.box {
+  height: 100px;
+  min-width: 100px;
 }
 
 #menu-software {
@@ -92,5 +109,28 @@ element.style {
 
 #menu-training {
   background: #926fb1;
+}
+
+footer ul li {
+  font-size: .80rem;
+  line-height: 1.3rem;
+}
+
+footer {
+  background-color: #2f2d2d;
+  color: #fff;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #888;
+  font-size: .80rem;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
