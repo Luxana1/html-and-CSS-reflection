@@ -1,0 +1,26 @@
+@use '../abstracts/index' as *;
+
+.hero {
+    border: 5px red solid;
+    width: 250px;
+
+    @media only screen and (min-width: $break-s) {
+        width: 500px;
+    }
+    @media only screen and (min-width: $break-m) {
+        width: 800px;
+        border: 5px green solid;
+
+    } 
+    @media only screen and (min-width: $break-l) {
+        width: 1000px;
+    } 
+    @media only screen and (min-width: $break-xl) {
+        width: 1200px;
+    } 
+
+}
+
+.hero__container--center img {
+    width: 100%;
+}

@@ -1,0 +1,42 @@
+@use '../abstracts/index' as *;
+
+
+  
+  .navbar {
+    background: $white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
+}
+
+
+  
+  .navbar__logo {
+    max-width: 100px;
+  }
+
+  .navbar__bars {
+    
+    color: $grayblue;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+    @media only screen and (min-width: $break-m) {
+        opacity: 0;
+    }
+}
+
+
+#menu-software {background:#67809f;}
+#menu-support {background:#4183d7;}
+#menu-marketing {background:#2ecc71;}
+#menu-services {background:#d64541;}
+#menu-design {background:#926fb1;}
+#menu-security {background: #f62459;}
+#menu-training {background:#926fb1;}
+
