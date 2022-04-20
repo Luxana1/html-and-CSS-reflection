@@ -1,8 +1,7 @@
 @use '../abstracts/index' as *;
 
 footer .container {
-    background-color: $color-bg;
-    justify-content: space-between;
+    background-color: $color-bg;  
 }
 
 footer h4 {
@@ -12,14 +11,20 @@ footer h4 {
     margin-bottom: 26px;
 }
 
-footer .footer-row .services  {
+.footer-row .services  {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: space-evenly;
 }
 
-footer .footer-row .offices {
+.footer-row .offices {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+.service, .office {
+    width: 225px;
 }
 
 footer ul {
@@ -27,7 +32,6 @@ footer ul {
     list-style-type: none;
     font-size: .80rem;
     line-height: 1.3rem;
-    width: 225px;
     margin-bottom: 30px;
 }
 
@@ -49,3 +53,21 @@ footer ul {
        flex-direction: row;
        justify-content: space-between;
    }
+
+@media (min-width: $break-xs) {
+    footer .container .footer-row{
+        max-width: 480px;
+        margin: 0 auto;
+        .services, .offices {
+            flex-direction: row;
+            justify-content: space-evenly;
+            .service, .office{
+                width: 225px;
+            }
+        }
+        .offices {
+            flex-wrap: wrap;
+        }
+    }
+
+}
