@@ -1,6 +1,5 @@
 @use '../abstracts/index' as *;
 
-
   
   .navbar {
     background: $white;
@@ -12,13 +11,12 @@
     position: relative;
 }
 
-
-  
-  .navbar__logo {
-    max-width: 100px;
+  .navbar_logo {
+    max-width: 350px;
+    
   }
 
-  .navbar__bars {
+  .navbar_bars {
     
     color: $grayblue;
     display: block;
@@ -30,13 +28,80 @@
         opacity: 0;
     }
 }
+  .topnav .btn{
+    font-family: $font-family;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
 
 
-#menu-software {background:#67809f;}
-#menu-support {background:#4183d7;}
-#menu-marketing {background:#2ecc71;}
-#menu-services {background:#d64541;}
-#menu-design {background:#926fb1;}
-#menu-security {background: #f62459;}
-#menu-training {background:#926fb1;}
+  .topnav .btn input[type=text] {
+    display: block;
+    margin-top: 0em;
+    font-family: $font-family;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    color: $color-text;
+  }
+  .container_top {
+    display: flex;
+  }
+
+#menu-software {
+  background:#67809f;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+}
+#menu-support {
+  background:#4183d7;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+
+}
+#menu-marketing {
+  background:#2ecc71;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+}
+#menu-services {
+  background:#d64541;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+}
+#menu-design {
+  background:#926fb1;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+}
+#menu-security {
+  background: #f62459;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+}
+#menu-training {
+  background:#926fb1;
+  @include menu-top;
+
+  .ul {
+    @include ul;
+  }
+}
 

@@ -1,0 +1,12 @@
+@mixin menu-top {
+    text-align: center;
+    display: flex;
+}
+
+@mixin ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}

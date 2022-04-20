@@ -21,6 +21,12 @@
 
 }
 
-.hero__container--center img {
+.btn-hero {
+    color: $white;
+    background-color: $color-bg;
+    border-color: $color-bg;
+}
+
+.hero_container-center img {
     width: 100%;
 }
