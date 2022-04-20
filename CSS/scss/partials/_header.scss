@@ -3,46 +3,58 @@
   
   .navbar {
     background: $white;
-    height: 80px;
+    //height: 100px;
     display: flex;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1200px) /2);
-    z-index: 10;
-    position: relative;
+    // justify-content: space-between;
+    // padding: 0.5rem calc((100vw - 1200px) /2);
+    // z-index: 10;
+    // position: relative;
 }
 
   .navbar_logo {
-    max-width: 350px;
-    
+    max-width: 30%;
+    margin-right: auto;  
   }
 
-  .navbar_bars {
-    
-    color: $grayblue;
-    display: block;
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    font-size: 2rem;
-    @media only screen and (min-width: $break-m) {
-        opacity: 0;
-    }
-}
-  .topnav .btn{
-    font-family: $font-family;
-    font-size: 1.2rem;
+  .btn {
     text-transform: uppercase;
+  //  color: $white;
   }
 
-
-  .topnav .btn input[type=text] {
-    display: block;
-    margin-top: 0em;
-    font-family: $font-family;
-    font-size: 1rem;
-    letter-spacing: .4px;
-    color: $color-text;
+  .top_btn {
+    display: flex;
+    align-items: center;
   }
+
+  
+
+//   .navbar_bars {
+    
+//     color: $grayblue;
+//     display: block;
+//     position: absolute;
+//     top: 22px;
+//     right: 20px;
+//     font-size: 2rem;
+//     @media only screen and (min-width: $break-m) {
+//         opacity: 0;
+//     }
+// }
+//   .navbar .btn{
+//     font-family: $font-family;
+//     font-size: 1.2rem;
+//     text-transform: uppercase;
+//   }
+
+
+//   .navbar .btn input[type=text] {
+//     display: block;
+//     margin-top: 0em;
+//     font-family: $font-family;
+//     font-size: 1rem;
+//     letter-spacing: .4px;
+//     color: $color-text;
+//   }
   .container_top {
     display: flex;
   }
