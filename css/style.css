@@ -18,7 +18,7 @@
     width: 1000px;
   }
 }
-@media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1200px) {
   .hero {
     width: 1200px;
   }
@@ -55,14 +55,53 @@
   white-space: normal;
 }
 
-.navbar {
-  background: #ffffff;
-  display: flex;
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.1;
 }
 
-.navbar_logo {
-  max-width: 30%;
-  margin-right: auto;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 0px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  header .nav_container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.6rem 6px 0 6px;
+    max-width: 100%;
+    min-width: none;
+    align-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+  }
+  header #logo {
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  header #logo .navbar_logo {
+    max-width: 402px;
+    width: 100%;
+  }
+  header a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
 }
 
 .btn {
@@ -72,10 +111,6 @@
 .top_btn {
   display: flex;
   align-items: center;
-}
-
-.container_top {
-  display: flex;
 }
 
 #menu-software {
@@ -223,7 +258,7 @@ footer .bottom {
   justify-content: space-between;
 }
 
-@media (min-width: 495px) {
+@media (min-width: 0px) {
   footer .container .footer-row {
     max-width: 480px;
     margin: 0 auto;
@@ -257,7 +292,7 @@ footer .bottom {
     width: 1000px;
   }
 }
-@media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1200px) {
   .middle {
     width: 1200px;
   }
