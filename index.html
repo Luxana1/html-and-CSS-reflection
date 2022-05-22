@@ -20,8 +20,8 @@
     </title>
 </head>
 <body>
-    <!-- main side menu -->
-    <section class="side_menu" onclick="closeNav()">
+    <!-- main side menu, this will be used for a side bars menu -->
+    <!-- <section class="side_menu" onclick="closeNav()">
         <div class="main_side_nav">
             <ul>
                 <li>
@@ -135,140 +135,157 @@
                 </li>
             </ul>
         </div>
-    </section> 
+    </section>  -->
       <!-- Header for all screens view -->
     <header>
-        <div class="nav_container">
-            <div class="top_nav">
-                <div id="logo">
-                    <a href="#"> 
-                        <img class="navbar_logo" src="img/net-logo.png" alt="Netmatters logo">
-                    </a>
+        <div class="class="navbar navbar-expand-lg navbar-light bg-light"">
+            <div class="nav_container">
+                <div class="top_nav">
+                    <div id="logo">
+                        <a href="#"> 
+                            <img class="navbar_logo img-fluid" src="img/net-logo.png" alt="Netmatters logo">
+                        </a>
+                    </div>
+                    <div class="actions">
+                        <div class="btn_call">
+                            <a href="#">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div id="btn_1" class="btn">
+                            <a class="btn btn-default btn-lg" href="#">
+                                <i class="fa-solid fa-computer-mouse">
+                                    <p>Support</p>
+                                </i>
+                            </a>
+                        </div>
+                        <div id="btn_2" class="btn">
+                            <a class="btn btn-default btn-lg" href="#" role="button">
+                                <i class="fa-regular fa-paper-plane">
+                                    <p>Contact</p>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="PC_input">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit" class="btn_search">
+                                <i class="fas fa-search icn-top" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <span class="navbar_bars">
+                            <button type="button"></button>
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </div>
                 </div>
-                <div id="btn_1" class="btn">
-                    <a class="btn btn-default btn-lg" href="#">
-                        <span class="fa-solid fa-computer-mouse">
-                        </span>Support
-                    </a>
-                </div>
-                <div id="btn_2" class="btn">
-                    <a class="btn btn-default btn-lg" href="#" role="button">
-                        <span class="fa-regular fa-paper-plane">
-                        </span>Contact
-                    </a>
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Search..">
-                </div>
-                <div class="navbar_bars">
-                    <i class="fas fa-bars"></i>
-                </div>
+            </div>
+        </div>
+        <!-- navifation, these 7 menu containers with submenu -->
+        <div id="main_nav">
+            <div class="container">
+                <ul class="row">
+                    <li id="menu-software" class="col">
+                        <a href="#"> 
+                            <small>Bespoke</small>
+                            Software
+                        </a>
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Workflow</a></li>
+                            <li><a href="#">Automation</a></li>
+                            <li><a href="#">Integration</a></li>
+                            <li><a href="#">Database</a></li>
+                            <li><a href="#">Sharepoint</a></li>
+                            <li><a href="#">Managment</a></li>
+                            <li><a href="#">Navision</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-support" class="col">
+                        <a href="#"> 
+                            <small>IT</small>
+                        Support
+                        </a>
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Managed IT</a></li>
+                            <li><a href="#">Business IT</a></li>
+                            <li><a href="#">Office 365</a></li>
+                            <li><a href="#">Consultancy</a></li>
+                            <li><a href="#">Claud Provider</a></li>
+                            <li><a href="#">Data Backup</a></li>
+                            <li><a href="#">Workflow</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-marketing" class="col">
+                        <a href="#"> 
+                            <small>Digital</small>
+                            Marketing
+                        </a>
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Search (SEO)</a></li>
+                            <li><a href="#">Paid (PPC)</a></li>
+                            <li><a href="#">Conversion (CRO)</a></li>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Social Media</a></li>
+                            <li><a href="#">Content</a></li>
+                            <li><a href="#">Workflow</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-services" class="col">
+                            <a href="#"> 
+                                <small>Telecom</small>
+                                Services
+                            </a> 
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Business Mobile</a></li>
+                            <li><a href="#">Hosted VOIP</a></li>
+                            <li><a href="#">Business VOIP</a></li>
+                            <li><a href="#">Business Broadband</a></li>
+                            <li><a href="#">Leased Line</a></li>
+                            <li><a href="#">3CX System</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-design" class="col">
+                        <a href="#"> 
+                            <small>Web</small>
+                            Design
+                        </a>
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Stylish Websites</a></li>
+                            <li><a href="#">Ecommerce Stores</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">Apps</a></li>
+                            <li><a href="#">Web Hosting</a></li>
+                            <li><a href="#">Pay Monthly Websites</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-security" class="col">
+                        <a href="#"> 
+                            <small>Cyber</small>
+                            Security
+                        </a>
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Assessment</a></li>
+                            <li><a href="#">Managment</a></li>
+                            <li><a href="#">Penetration Testing</a></li>
+                            <li><a href="#">Cyber Essentials</a></li>
+                            <li><a href="#">PCI/DSS</a></li>
+                            <li><a href="#">Hacker Prevention</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-training" class="col">
+                        <a href="#"> 
+                            <small>Developer</small>
+                            Training
+                        </a>
+                        <ul class="menu_list" role="menu">
+                            <li><a href="#">Train for a career in Tech</a></li>
+                            <li><a href="#">Scion Scheme frequently asked questions</a></li>
+                            <li><a href="#">Scion collaborators</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </header> 
-    <!-- navifation, these 7 menu containers with submenu -->
-    <header>
-        <div class="container">
-            <div id="menu-software" class="hover">
-                <a href="#"> 
-                    <small>Bespoke</small>
-                    Software
-                </a>
-                <ul class role="menu">
-                    <li><a href="#">Workflow</a></li>
-                    <li><a href="#">Automation</a></li>
-                    <li><a href="#">Integration</a></li>
-                    <li><a href="#">Database</a></li>
-                    <li><a href="#">Sharepoint</a></li>
-                    <li><a href="#">Managment</a></li>
-                    <li><a href="#">Navision</a></li>
-                </ul>
-            </div>
-            <div id="menu-support" class="hover">
-                <a href="#"> 
-                    <small>IT</small>
-                Support
-                </a>
-                <ul class role="menu">
-                    <li><a href="#">Managed IT</a></li>
-                    <li><a href="#">Business IT</a></li>
-                    <li><a href="#">Office 365</a></li>
-                    <li><a href="#">Consultancy</a></li>
-                    <li><a href="#">Claud Provider</a></li>
-                    <li><a href="#">Data Backup</a></li>
-                    <li><a href="#">Workflow</a></li>
-                </ul>
-            </div>
-            <div id="menu-marketing" class="hover">
-                <a href="#"> 
-                    <small>Digital</small>
-                    Marketing
-                </a>
-                <ul class role="menu">
-                    <li><a href="#">Search (SEO)</a></li>
-                    <li><a href="#">Paid (PPC)</a></li>
-                    <li><a href="#">Conversion (CRO)</a></li>
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Social Media</a></li>
-                    <li><a href="#">Content</a></li>
-                    <li><a href="#">Workflow</a></li>
-                </ul>
-            </div>
-            <div id="menu-services" class="hover">
-                    <a href="#"> 
-                        <small>Telecom</small>
-                        Services
-                    </a> 
-                <ul class role="menu">
-                    <li><a href="#">Business Mobile</a></li>
-                    <li><a href="#">Hosted VOIP</a></li>
-                    <li><a href="#">Business VOIP</a></li>
-                    <li><a href="#">Business Broadband</a></li>
-                    <li><a href="#">Leased Line</a></li>
-                    <li><a href="#">3CX System</a></li>
-                </ul>
-            </div>
-            <div id="menu-design" class="hover">
-                <a href="#"> 
-                    <small>Web</small>
-                    Design
-                </a>
-                <ul class role="menu">
-                    <li><a href="#">Stylish Websites</a></li>
-                    <li><a href="#">Ecommerce Stores</a></li>
-                    <li><a href="#">Branding</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><a href="#">Web Hosting</a></li>
-                    <li><a href="#">Pay Monthly Websites</a></li>
-                </ul>
-            </div>
-            <div id="menu-security" class="hover">
-                <a href="#"> 
-                    <small>Cyber</small>
-                    Security
-                </a>
-                <ul class role="menu">
-                    <li><a href="#">Assessment</a></li>
-                    <li><a href="#">Managment</a></li>
-                    <li><a href="#">Penetration Testing</a></li>
-                    <li><a href="#">Cyber Essentials</a></li>
-                    <li><a href="#">PCI/DSS</a></li>
-                    <li><a href="#">Hacker Prevention</a></li>
-                </ul>
-            </div>
-            <div id="menu-training" class="hover">
-                <a href="#"> 
-                    <small>Developer</small>
-                    Training
-                </a>
-                <ul class role="menu">
-                    <li><a href="#">Train for a career in Tech</a></li>
-                    <li><a href="#">Scion Scheme frequently asked questions</a></li>
-                    <li><a href="#">Scion collaborators</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
     <!-- Hero image with text -->
     <div class="hero">
         <div class="hero_container">
