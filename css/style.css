@@ -1,3 +1,19 @@
+@media only screen and (min-width: 576px) {
+  .hero {
+    width: 800px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 1000px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero {
+    width: auto;
+  }
+}
+
 .hero_container-img {
   background-image: url(../img/home-3wAI.jpg);
   background-size: 1300px;
@@ -176,6 +192,7 @@ label {
 }
 
 .drop-btn {
+  position: relative;
   display: block;
   padding: 19px 0 18px;
   text-transform: uppercase;
@@ -413,16 +430,18 @@ label {
   display: none;
   position: absolute;
   z-index: 2;
-  bottom: -45px;
   padding-left: 0;
-  height: 45px;
-  width: 970px;
+  height: 100%;
+  width: 150px;
   font-size: 13px;
-  list-style-type: "- ";
+  list-style-type: none;
+  background-color: #333645;
+  border-radius: 0 0 10px 10px;
 }
 
-.drop-menu li {
-  padding-right: 40px;
+.drop-menu:hover {
+  background-color: #333645;
+  display: block;
 }
 
 a, a:hover {

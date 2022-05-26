@@ -110,6 +110,7 @@ header {
   padding-bottom: 1px;
 }
 .drop-btn {
+  position: relative;
   display: block;
   padding: 19px 0 18px;
   text-transform: uppercase;
@@ -120,6 +121,7 @@ header {
   font-size: 1.4rem;
   padding-bottom: 10px;
 }
+
 .software-btn .icon {
   color: $grayblue;
 }
@@ -275,16 +277,19 @@ background-color: $strawberry;
   display: none;
   position: absolute;
   z-index: 2;
-  bottom: -45px;
   padding-left: 0;
-  height: 45px;
-  width: 970px;
+  height: 100%;
+  width: 150px;
   font-size: 13px;
-  list-style-type: "- ";
+  list-style-type: none;
+  background-color: $color-bg;
+  border-radius: 0 0 10px 10px;
 }
-.drop-menu li {
-  padding-right: 40px;
+.drop-menu:hover {
+  background-color: $color-bg;
+  display: block;
 }
+
 a, a:hover {
   text-decoration: none;
   color: inherit;
