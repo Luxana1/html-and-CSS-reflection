@@ -1,30 +1,35 @@
 @use '../abstracts/index' as *;
 
-.hero {
-    border: 5px red solid;
-    width: 250px;
-
-    @media only screen and (min-width: $break-s) {
-        width: 500px;
-    }
-    @media only screen and (min-width: $break-m) {
-        width: 800px;
-        border: 5px green solid;
-
-    } 
-    @media only screen and (min-width: $break-l) {
-        width: 1000px;
-    } 
-    @media only screen and (min-width: $break-xl) {
-        width: 1200px;
-    } 
-
+// .hero {
+//     @media only screen and (min-width: $break-s) {
+//         width: 500px;
+//     }
+//     @media only screen and (min-width: $break-m) {
+//         width: 800px;
+        
+//     } 
+//     @media only screen and (min-width: $break-l) {
+//         width: 1000px;
+//     } 
+//     @media only screen and (min-width: $break-xl) {
+//         width: 1200px;
+//     } 
+// }
+.hero_container-img {
+    background-image: url(../img/home-3wAI.jpg);
+    background-size: 1300px;
+    height: 400px;
+    width: auto;
 }
-
+.hero_text {
+    color: $white;
+    padding: 20px;
+}
 .btn-hero {
     color: $white;
     background-color: $color-bg;
     border-color: $color-bg;
+    margin: 80px 20px;
 }
 
 .hero_container-center img {

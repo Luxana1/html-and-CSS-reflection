@@ -1,12 +1,20 @@
 @use '../abstracts/index' as *;
 
+* {
+  margin: 0px;
+  font-family: $font-family;
+  line-height: normal;
+  
+}
 .container {
-  display: flex;  
-  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-header {
-  @media only screen and (min-width: $break-xs) {
+@media only screen and (min-width: $break-xs) {
+    header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -26,6 +34,7 @@ header {
       max-width: 100%;
       min-width: 0;
       padding: 20px 15px;
+      margin: 0 20px;
       color: $white;
     }
     #logo {
@@ -43,15 +52,8 @@ header {
     //   display: flex;
     //   flex-direction: row;
     // }
-
-    nav {
-      display: none !important;
-    }
   }
 }
-  .btn {
-    text-transform: uppercase;
-  }
 
   .top_btn {
     display: flex;
@@ -90,15 +92,10 @@ header {
 
 header {
   @media only screen and (min-width: $break-l) {
-    #main_nav {
-      background: $color-bg;
-      color: $white;
-      text-transform: uppercase;
-    }
     nav {
       display: flex !important;
     }
-    .container {
+    #main_nav {
       position: relative;
       background-color: $color-bg;
       color: $white;
@@ -107,61 +104,188 @@ header {
 }
 
 
-#menu-software {
-  background:#67809f;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
+//menu buttons and dropdown submenu
+.s {
+  font-size: 10px;
+  padding-bottom: 1px;
 }
-#menu-support {
-  background:#4183d7;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
-
-}
-#menu-marketing {
-  background:#2ecc71;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
-}
-#menu-services {
-  background:#d64541;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
-}
-#menu-design {
-  background:#926fb1;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
-}
-#menu-security {
-  background: #f62459;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
-}
-#menu-training {
-  background:#926fb1;
-  @include menu-top;
-
-  .ul {
-    @include ul;
-  }
+.drop-btn {
+  display: block;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
+.drop-btn .icon {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+.software-btn .icon {
+  color: $grayblue;
+}
+.software-btn svg {
+  @include main-nav-item;
+  color: $grayblue;
+}
+.software-btn:hover {
+  color: $white;
+  background-color: $grayblue;
+}
+.software-btn:hover svg, .software:hover .btn {
+  color: $white;
+}
+
+.support-btn .icon {
+  color: $blue;
+}
+.support-btn svg {
+  @include main-nav-item;
+  color: $blue;
+}
+.support-btn:hover {
+  color: $white;
+  background-color: $blue;
+}
+.support-btn:hover svg, .support:hover .btn {
+  color: $white;
+}
+
+.marketing-btn .icon {
+  color: $green;
+}
+.marketing-btn svg {
+  @include main-nav-item;
+  color: $green;
+}
+.marketing-btn:hover {
+  color: $white;
+  background-color: $green;
+}
+.marketing-btn:hover svg, .marketing:hover .btn {
+  color: $white;
+}
+
+.telecoms-btn .icon {
+  color: $strawberry;
+}
+.telecoms-btn svg {
+  @include main-nav-item;
+  color: $strawberry;
+}
+.telecoms-btn:hover {
+  color: $white;
+  background-color: $strawberry;
+}
+.telecoms-btn:hover svg, .telecoms:hover .btn {
+  color: $white;
+}
+
+.design-btn .icon {
+  color: $purple;
+}
+.design-btn svg {
+  @include main-nav-item;
+  color: $purple;
+}
+.design-btn:hover {
+  color: $white;
+  background-color: $purple;
+}
+.design-btn:hover svg, .design:hover .btn {
+  color: $white;
+}
+
+.security-btn .icon {
+  color: $rasberry;
+}
+.security-btn svg {
+  @include main-nav-item;
+  color: $rasberry;
+}
+.security-btn:hover {
+  color: $white;
+  background-color: $rasberry;
+}
+.security-btn:hover svg, .security:hover .btn {
+  color: $white;
+}
+
+.training-btn .icon {
+  color: $strawberry;
+}
+.training-btn svg {
+  @include main-nav-item;
+  color: $strawberry;
+}
+.training-btn:hover {
+  color: $white;
+  background-color: $strawberry;
+}
+.training-btn:hover svg, .training:hover .btn {
+  color: $white;
+  
+}
+
+// icons svg
+.fa-th::before {
+  content: "\f00a";
+}
+.bi-display::before {
+  content: "\f302";
+}
+.bi-bar-chart-fill::before {
+  content: "\f17a";
+}
+.bi-code-slash::before {
+  content: "\f2c6";
+}
+
+//menu drop
+.software-bar, .design-menu {
+  background-color: $grayblue;
+}
+.support-bar, .design-menu {
+  background-color: $blue;
+}
+.dogital-bar, .design-menu {
+  background-color: $green;
+}
+.telecoms-bar, .design-menu {
+background-color: $strawberry;
+}
+.design-bar, .design-menu {
+  background-color: $purple;
+}
+.securit-bar, .design-menu {
+  background-color: $rasberry;
+}
+.training-bar, .design-menu {
+  background-color: $strawberry;
+}
+.back-bar {
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  bottom: -45px;
+  height: 45px;
+  width: 100vw;
+}
+.drop-menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  bottom: -45px;
+  padding-left: 0;
+  height: 45px;
+  width: 970px;
+  font-size: 13px;
+  list-style-type: "- ";
+}
+.drop-menu li {
+  padding-right: 40px;
+}
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}

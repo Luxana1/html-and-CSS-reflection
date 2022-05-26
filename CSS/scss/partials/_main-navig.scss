@@ -18,18 +18,14 @@
     } 
 }
 
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
+// 7 elements from menu (blocks in the middle) general style
 .row {
     margin-left: -15px;
     margin-right: -15px;
 }
 .service-list {
     margin-top: -30px;
+    padding: 0 40px;
 }
 .service-list .block {
     text-decoration: none;
@@ -49,32 +45,101 @@
     padding-right: 15px;
 }
 
-form {
-    border: 4px solid #f1f1f1;
-    font-family: $font-family;
-  }    
-
-.container-form {
-    padding: 20px;
-    background-color: #f1f1f1;
-  }
-
-input[type=text], input[type=submit] {
-    width: 50%;
-    padding: 12px;
-    margin: 8px 0;
-    //display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-input[type=checkbox] {
-    margin-top: 16px;
-  }
-  
-.btn-primary {
+// 7 elements from menu but they're blocks in the middle colors and hover
+.software svg {
     color: $white;
-    background-color: $color-bg;
-    border-color: $color-bg;
+    background-color: $grayblue;
+    @include main-nav-block;
+}
+.software:hover {
+    color: $white;
+    background-color: $grayblue;
+}
+  .software:hover svg, .software:hover .btn {
+    color: $grayblue;
+    background-color: $white;
+}
 
+.support svg {
+    color: $white;
+    background-color: $blue;
+    @include main-nav-block;
+}
+.support:hover {
+    color: $white;
+    background-color: $blue;
+}
+  .support:hover svg, .support:hover .btn {
+    color: $blue;
+    background-color: $white;
+}
+
+.marketing svg {
+    color: $white;
+    background-color: $green;
+    @include main-nav-block;
+}
+.marketing:hover {
+    color: $white;
+    background-color: $green;
+}
+  .marketing:hover svg, .marketing:hover .btn {
+    color: $green;
+    background-color: $white;
+}
+
+.telecoms svg {
+    color: $white;
+    background-color: $strawberry;
+    @include main-nav-block;
+}
+.telecoms:hover {
+    color: $white;
+    background-color: $strawberry;
+}
+  .telecoms:hover svg, .telecoms:hover .btn {
+    color: $strawberry;
+    background-color: $white;
+}
+
+.design svg {
+    color: $white;
+    background-color: $purple;
+    @include main-nav-block;
+}
+.design:hover {
+    color: $white;
+    background-color: $purple;
+}
+  .design:hover svg, .design:hover .btn {
+    color: $purple;
+    background-color: $white;
+}
+
+.security svg {
+    color: $white;
+    background-color: $rasberry;
+    @include main-nav-block;
+}
+.security:hover {
+    color: $white;
+    background-color: $rasberry;
+}
+  .security:hover svg, .security:hover .btn {
+    color: $rasberry;
+    background-color: $white;
+}
+
+.training svg {
+    color: $white;
+    background-color: $strawberry;
+    @include main-nav-block;
+}
+.training:hover {
+    color: $white;
+    background-color: $strawberry;
+}
+  .training:hover svg, .training:hover .btn {
+    color: $strawberry;
+    background-color: $white;
 }

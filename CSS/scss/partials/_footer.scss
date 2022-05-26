@@ -1,7 +1,10 @@
 @use '../abstracts/index' as *;
 
-footer .container {
-    background-color: $color-bg;  
+
+//top footer, services and offices
+.top-footer {
+    background-color: $color-bg;
+    padding: 47px 0 43px;
 }
 
 footer h4 {
@@ -10,49 +13,89 @@ footer h4 {
     font-size: 1rem;
     margin-bottom: 26px;
 }
-
-.footer-row .services  {
+.footer-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    //justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 40px;
 }
 
-.footer-row .offices {
+.services, .offices {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }
 .service, .office {
     width: 225px;
+    margin-bottom: 30px;
 }
-
-footer ul {
+.flex-column {
+    flex-direction: column !important;
+}
+footer ul li {
     color: $white;
     list-style-type: none;
     font-size: .80rem;
-    line-height: 1.3rem;
-    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 1.3rem
+}
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+//footer rule
+hr:not([size]) {
+    height: 1px;
+    color: $white;
+}
+.foot-rule {
+    margin-bottom: 14px;
+}
+.bottom {
+    margin: 0 40px;
+}
+.licence {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: $white;
+    display: flex;
+    padding-top: 5px;
+}
+.licence span {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+// .licence .sitemap {
+//     margin: 0;
+// }
+//br with class "visible-xs" will break the line on mobile devices
+.visible-lg, .visible-md, .visible-sm, .visible-xs {
+    display: none!important;
 }
 
-   footer .bottom {
-       display: flex;
-       justify-content: space-between;
-       border-top: 1px solid #888;
-       font-size: .80rem;
-       padding-top: 10px;
-       margin-top: 10px;
-   }
-   
-   
-   .bottom-footer {
-       padding: 50px 0;
-   }
-    .partnersbadge ul {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-   }
+//    footer .bottom {
+//        display: flex;
+//        justify-content: space-between;
+//        border-top: 1px solid #888;
+//        font-size: .80rem;
+//        padding-top: 10px;
+//        margin-top: 10px;
+//    }
+
+
+// partnersbadges 
+.bottom-footer {
+    padding: 50px 0;
+    margin: 0 20px;
+}
+.partnersbadge ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 @media (min-width: $break-xs) {
     footer .container .footer-row{
