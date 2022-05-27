@@ -138,46 +138,37 @@
     </section>  -->
       <!-- Header for all screens view -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="top_nav">
-                    <div id="logo">
-                        <a class="navbar-brand" href="#"> 
-                            <img class="navbar_logo img-fluid" src="img/net-logo.png" alt="Netmatters logo">
-                        </a>
+        <div class="outer">
+            <div class="inner">
+                <div class="container_top">
+                    <div>
+                        <img class="navbar_logo img-fluid" alt="Netmatters logo" src="img/net-logo.png">
                     </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul>
-                            <!-- <li class="btn_call">
-                                <a href="#">
-                                    <i class="fas fa-phone-alt"></i>
-                                </a>
-                            </li> -->
-                            <li id="btn_1" class="btn">
-                                <a class="btn btn-primary btn-lg" href="#">
-                                    <i class="fa-solid fa-computer-mouse">
-                                        <p>Support</p>
-                                    </i>
-                                </a>
-                            </li>
-                            <li id="btn_2" class="btn">
-                                <a class="btn btn-secondary btn-lg" href="#" role="button">
-                                    <i class="fa-regular fa-paper-plane">
-                                        <p>Contact</p>
-                                    </i>
-                                </a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="search">
-                            <button class="btn_search" type="submit">
-                                <i class="fas fa-search icn-top" aria-hidden="true"></i>
+                    <div class="topnav">
+                        <div class="container_button">
+                            <button class="btn_1" type="button">
+                                <i class="fa-solid fa-computer-mouse"></i>Support
                             </button>
-                        </form>
+                        <button class="btn_2" type="button">
+                            <i class="fa-regular fa-paper-plane"></i>Contact
+                        </button>
+                    </div>
+                    <div class="container_top">
+                        <div class="search_container">
+                            <form class="form" action="#">
+                                <input class="search_form" type="text" placeholder="Search..." name="search">
+                                <button class="search_button" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="menu_phone">
+                            <div class="container_phone">
+                                <i class="fas fa-phone-volume phone"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
         <!-- navifation, these 7 menu containers with submenu -->
         <div id="main_nav">
             <div class="container">

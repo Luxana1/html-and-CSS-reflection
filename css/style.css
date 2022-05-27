@@ -79,8 +79,6 @@ form {
 
 input[type=text], input[type=submit] {
   width: 50%;
-  padding: 12px;
-  margin: 8px 0;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -133,6 +131,134 @@ label {
   line-height: normal;
 }
 
+.outer {
+  width: 100vw;
+  margin: auto;
+}
+
+.inner {
+  margin: 20px 0 20px 60px;
+}
+@media only screen and (min-width: 768px) {
+  .inner {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .inner {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inner {
+    width: 1200px;
+  }
+}
+
+.container_top {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.container_top, .topnav, .container_bottom, .container-phone {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_button {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .container_button {
+    display: flex;
+  }
+}
+
+.btn_1 {
+  display: inline;
+  width: 141px;
+  height: 56px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 46px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  background-color: #4183d7;
+  box-shadow: none;
+  border-color: #4183d7;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.btn_2 {
+  display: inline;
+  height: 56px;
+  width: 149px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 46px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  background-color: #999aa2;
+  box-shadow: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.search_container {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  margin-left: 20px;
+}
+
+.search_form {
+  padding: 5px 15px;
+  width: 63px;
+  height: 56px;
+}
+
+.search_button {
+  width: 63px;
+  height: 56px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #999aa2;
+  border: 0;
+  text-align: center;
+}
+
+.menu_phone {
+  display: flex;
+  align-items: center;
+}
+
+.container_phone {
+  align-items: center;
+  padding-bottom: 3px;
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .container_phone {
+    display: none;
+  }
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -149,20 +275,6 @@ label {
     z-index: 1;
     text-align: center;
     background-color: #ffffff;
-  }
-  header .nav_container {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0.6rem 6px 0 6px;
-  }
-  header .top_nav {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    min-width: 0;
-    padding: 20px 15px;
-    margin: 0 20px;
-    color: #ffffff;
   }
   header #logo {
     display: flex;

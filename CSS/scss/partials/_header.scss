@@ -6,6 +6,118 @@
   line-height: normal;
   
 }
+.outer {
+  width: 100vw;
+  margin: auto;
+}
+.inner {
+  @media only screen and (min-width: $break-m) {
+    width: 750px;
+  }
+  @media only screen and (min-width: $break-l) {
+    width: 970px;
+  }
+  @media only screen and (min-width: $break-xl) {
+    width: 1200px;
+  }
+  margin: 20px 0 20px 60px;
+}
+.container_top {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_logo {
+  max-width: 100%;
+  height: auto;
+}
+.container_top, .topnav, .container_bottom, .container-phone {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container_button {
+  display: none;
+}
+.container_button {
+  @media only screen and (min-width: $break-l) {
+    display: flex;
+  }
+}
+//buttons styling
+.btn_1 {
+  display: inline;
+  width: 141px;
+  height: 56px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 46px;
+  letter-spacing: 0.4px;
+  color: $white;
+  background-color: #4183d7;
+  box-shadow: none;
+  border-color: #4183d7;
+  text-transform: uppercase;
+  border: 0;
+}
+.btn_2 {
+  display: inline;
+  height: 56px;
+  width: 149px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 46px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  background-color: #999aa2;
+  box-shadow: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.search_container {
+  display: flex;
+}
+.form {
+  display: flex;
+  margin-left: 20px;
+  
+}
+.search_form {
+  padding: 5px 15px;
+  width: 63px;
+  height: 56px;
+}
+.search_button {
+  width: 63px;
+  height: 56px;
+  font-size: 24px;
+  color: $white;
+  background-color: #999aa2;
+  border: 0;
+  text-align: center;
+}
+
+//phone icon that appears on small devices
+.menu_phone {
+  display: flex;
+  align-items: center;
+}
+.container_phone {
+  align-items: center;
+  padding-bottom: 3px;
+  width: 32px;
+  height: 32px;
+  @media only screen and (min-width: $break-m) {
+    display: none;
+  }
+}
+
+//general container display
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -23,20 +135,20 @@
     text-align: center;
     background-color: $white;
 
-    .nav_container {
-      margin-right: auto;
-      margin-left: auto;
-      padding: 0.6rem 6px 0 6px;
-    }
-    .top_nav {
-      display: flex;
-      align-items: center;
-      max-width: 100%;
-      min-width: 0;
-      padding: 20px 15px;
-      margin: 0 20px;
-      color: $white;
-    }
+    // .nav_container {
+    //   margin-right: auto;
+    //   margin-left: auto;
+    //   padding: 0.6rem 6px 0 6px;
+    // }
+    // .top_nav {
+    //   display: flex;
+    //   align-items: center;
+    //   max-width: 100%;
+    //   min-width: 0;
+    //   padding: 20px 15px;
+    //   margin: 0 20px;
+    //   color: $white;
+    // }
     #logo {
       display: flex;
       flex-direction: row;
@@ -80,15 +192,6 @@
 //     text-transform: uppercase;
 //   }
 
-
-//   .navbar .btn input[type=text] {
-//     display: block;
-//     margin-top: 0em;
-//     font-family: $font-family;
-//     font-size: 1rem;
-//     letter-spacing: .4px;
-//     color: $color-text;
-//   }
 
 header {
   @media only screen and (min-width: $break-l) {
