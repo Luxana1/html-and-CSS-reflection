@@ -131,6 +131,10 @@ label {
   line-height: normal;
 }
 
+p {
+  margin: 0px;
+}
+
 .outer {
   width: 100vw;
   margin: auto;
@@ -538,22 +542,21 @@ label {
   width: 100vw;
 }
 
+.nav-item:hover .drop-menu {
+  display: flex;
+}
+
 .drop-menu {
   display: none;
+  flex-direction: row;
   position: absolute;
-  z-index: 2;
+  z-index: 2000;
   padding-left: 0;
   height: 100%;
-  width: 150px;
+  width: 100%;
   font-size: 13px;
   list-style-type: none;
   background-color: #333645;
-  border-radius: 0 0 10px 10px;
-}
-
-.drop-menu:hover {
-  background-color: #333645;
-  display: block;
 }
 
 a, a:hover {

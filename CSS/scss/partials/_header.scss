@@ -5,6 +5,9 @@
   font-family: $font-family;
   line-height: normal;
 }
+p {
+  margin: 0px;
+}
 .outer {
   width: 100vw;
   margin: auto;
@@ -375,22 +378,27 @@ background-color: $strawberry;
   height: 45px;
   width: 100vw;
 }
+.nav-item:hover .drop-menu {
+  display: flex;
+}
+
 .drop-menu {
   display: none;
+  flex-direction: row;
   position: absolute;
-  z-index: 2;
+  z-index: 2000;
   padding-left: 0;
   height: 100%;
-  width: 150px;
+  width: 100%;
   font-size: 13px;
   list-style-type: none;
   background-color: $color-bg;
-  border-radius: 0 0 10px 10px;
+  // border-radius: 0 0 10px 10px;
 }
-.drop-menu:hover {
-  background-color: $color-bg;
-  display: block;
-}
+// .drop-menu:hover {
+//   background-color: $color-bg;
+//   display: block;
+// }
 
 a, a:hover {
   text-decoration: none;
