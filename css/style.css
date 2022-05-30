@@ -745,6 +745,11 @@ hr:not([size]) {
   background-color: #ffffff;
 }
 
+.software .btn {
+  background-color: #67809f;
+  color: #ffffff;
+}
+
 .support svg {
   color: #ffffff;
   background-color: #4183d7;
@@ -766,6 +771,11 @@ hr:not([size]) {
 .support:hover svg, .support:hover .btn {
   color: #4183d7;
   background-color: #ffffff;
+}
+
+.support .btn {
+  background-color: #4183d7;
+  color: #ffffff;
 }
 
 .marketing svg {
@@ -791,6 +801,11 @@ hr:not([size]) {
   background-color: #ffffff;
 }
 
+.marketing .btn {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+
 .telecoms svg {
   color: #ffffff;
   background-color: #d64541;
@@ -812,6 +827,11 @@ hr:not([size]) {
 .telecoms:hover svg, .telecoms:hover .btn {
   color: #d64541;
   background-color: #ffffff;
+}
+
+.telecoms .btn {
+  background-color: #d64541;
+  color: #ffffff;
 }
 
 .design svg {
@@ -837,6 +857,11 @@ hr:not([size]) {
   background-color: #ffffff;
 }
 
+.design .btn {
+  background-color: #926fb1;
+  color: #ffffff;
+}
+
 .security svg {
   color: #ffffff;
   background-color: #f62459;
@@ -860,6 +885,11 @@ hr:not([size]) {
   background-color: #ffffff;
 }
 
+.security .btn {
+  background-color: #f62459;
+  color: #ffffff;
+}
+
 .training svg {
   color: #ffffff;
   background-color: #d64541;
@@ -881,4 +911,9 @@ hr:not([size]) {
 .training:hover svg, .training:hover .btn {
   color: #d64541;
   background-color: #ffffff;
+}
+
+.training .btn {
+  background-color: #d64541;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

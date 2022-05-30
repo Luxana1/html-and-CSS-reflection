@@ -59,6 +59,10 @@
     color: $grayblue;
     background-color: $white;
 }
+.software .btn {
+    background-color: $grayblue;
+    color: $white;
+}
 
 .support svg {
     color: $white;
@@ -72,6 +76,10 @@
   .support:hover svg, .support:hover .btn {
     color: $blue;
     background-color: $white;
+}
+.support .btn {
+    background-color: $blue;
+    color: $white;
 }
 
 .marketing svg {
@@ -87,6 +95,10 @@
     color: $green;
     background-color: $white;
 }
+.marketing .btn {
+    background-color: $green;
+    color: $white;
+}
 
 .telecoms svg {
     color: $white;
@@ -100,6 +112,10 @@
   .telecoms:hover svg, .telecoms:hover .btn {
     color: $strawberry;
     background-color: $white;
+}
+.telecoms .btn {
+    background-color: $strawberry;
+    color: $white;
 }
 
 .design svg {
@@ -115,6 +131,10 @@
     color: $purple;
     background-color: $white;
 }
+.design .btn {
+    background-color: $purple;
+    color: $white;
+}
 
 .security svg {
     color: $white;
@@ -129,6 +149,10 @@
     color: $rasberry;
     background-color: $white;
 }
+.security .btn {
+    background-color: $rasberry;
+    color: $white;
+}
 
 .training svg {
     color: $white;
@@ -142,4 +166,8 @@
   .training:hover svg, .training:hover .btn {
     color: $strawberry;
     background-color: $white;
+}
+.training .btn {
+    background-color: $strawberry;
+    color: $white;
 }
