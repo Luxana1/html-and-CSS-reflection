@@ -1,18 +1,19 @@
 @use '../abstracts/index' as *;
 
-.hero {
-    @media only screen and (min-width: $break-s) {
-        width: 800px;
-    }
-    @media only screen and (min-width: $break-m) {
-        width: 1000px;
+// .hero {
+
+//     @media only screen and (min-width: $break-s) {
+//         width: 800px;
+//     }
+//     @media only screen and (min-width: $break-m) {
+//         width: 1000px;
         
-    } 
-    @media only screen and (min-width: $break-l) {
-        width: auto;
-    } 
+//     } 
+//     @media only screen and (min-width: $break-l) {
+//         width: auto;
+//     } 
  
-}
+// }
 .hero_container-img {
     background-image: url(../img/home-3wAI.jpg);
     background-size: 1300px;

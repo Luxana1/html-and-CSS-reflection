@@ -1,19 +1,4 @@
-@media only screen and (min-width: 576px) {
-  .hero {
-    width: 800px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hero {
-    width: 1000px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero {
-    width: auto;
-  }
-}
-
+@charset "UTF-8";
 .hero_container-img {
   background-image: url(../img/home-3wAI.jpg);
   background-size: 1300px;
@@ -78,7 +63,7 @@ form {
 }
 
 input[type=text], input[type=submit] {
-  width: 50%;
+  width: 80%;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -109,10 +94,15 @@ label {
 
 .badges ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
   margin: 20px 40px;
+}
+
+.badges li {
+  padding: 20px;
 }
 
 .btn {
@@ -120,15 +110,17 @@ label {
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.063rem;
   border-radius: 3px;
   white-space: normal;
+  margin: 10px;
 }
 
 * {
   margin: 0px;
   font-family: "Poppins", sans-serif;
-  line-height: normal;
+  letter-spacing: 0.4px;
 }
 
 p {
@@ -141,7 +133,7 @@ p {
 }
 
 .inner {
-  margin: 20px 0 20px 60px;
+  margin: 15px;
 }
 @media only screen and (min-width: 768px) {
   .inner {
@@ -161,7 +153,7 @@ p {
 
 .container_top {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -201,6 +193,10 @@ p {
   border-color: #4183d7;
   text-transform: uppercase;
   border: 0;
+}
+
+.fa-solid, .fa-regular, .fas {
+  padding-right: 8px;
 }
 
 .btn_2 {
@@ -299,6 +295,7 @@ p {
     position: relative;
     background-color: #333645;
     color: #ffffff;
+    border-bottom: 1px solid #ffffff;
   }
 }
 
@@ -312,6 +309,7 @@ p {
   display: block;
   padding: 19px 0 18px;
   text-transform: uppercase;
+  font-weight: bold;
   line-height: 1;
 }
 
@@ -542,6 +540,11 @@ p {
   width: 100vw;
 }
 
+.nav-item {
+  border-left: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
 .nav-item:hover .drop-menu {
   display: flex;
 }
@@ -551,12 +554,53 @@ p {
   flex-direction: row;
   position: absolute;
   z-index: 2000;
-  padding-left: 0;
-  height: 100%;
+  left: 0;
   width: 100%;
+  padding: 10px 0;
   font-size: 13px;
   list-style-type: none;
-  background-color: #333645;
+  filter: brightness(90%);
+}
+
+.drop-menu li {
+  margin-left: 80px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.drop-menu li::before {
+  content: "—";
+  position: absolute;
+  margin-left: -45px;
+}
+
+.software-menu {
+  background-color: #67809f;
+}
+
+.support-menu {
+  background-color: #4183d7;
+}
+
+.marketing-menu {
+  background-color: #2ecc71;
+}
+
+.telecoms-menu {
+  background-color: #d64541;
+}
+
+.design-menu {
+  background-color: #926fb1;
+}
+
+.security-menu {
+  background-color: #f62459;
+}
+
+.training-menu {
+  background-color: #d64541;
 }
 
 a, a:hover {
@@ -605,6 +649,7 @@ footer ul li {
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.3rem;
+  padding: 20px;
 }
 
 footer a {
@@ -651,6 +696,7 @@ hr:not([size]) {
 
 .partnersbadge ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
