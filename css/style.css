@@ -649,7 +649,7 @@ footer ul li {
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.3rem;
-  padding: 20px;
+  padding-left: 0;
 }
 
 footer a {
@@ -681,8 +681,12 @@ hr:not([size]) {
 }
 
 .licence span {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sitemap {
+  font-size: 1rem;
 }
 
 .visible-lg, .visible-md, .visible-sm, .visible-xs {
