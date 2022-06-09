@@ -32,10 +32,16 @@
 
 .btn-hero {
   color: #ffffff;
-  background-color: #333645;
-  border-color: #333645;
+  background-color: #67809f;
+  border-color: #67809f;
   margin: 80px 20px;
   font-weight: 900;
+}
+
+.btn-hero:hover {
+  color: #ffffff;
+  border-color: #526781;
+  background-color: #526781;
 }
 
 .bi-arrow-right {

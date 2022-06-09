@@ -42,10 +42,15 @@
 }
 .btn-hero {
     color: $white;
-    background-color: $color-bg;
-    border-color: $color-bg;
+    background-color: $grayblue;
+    border-color: $grayblue;
     margin: 80px 20px;
     font-weight: 900;
+}
+.btn-hero:hover {
+    color: $white;
+    border-color: #526781;
+    background-color: #526781;
 }
 .bi-arrow-right {
     margin-left: 12px;
