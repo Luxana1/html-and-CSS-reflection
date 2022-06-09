@@ -2,18 +2,6 @@
 /* Base -------------------------------*/
 
 
-// main {
-//  background-color: $white;
-//  font-size: 1rem;
-//  line-height: 1.5;
-//  font-family: $font-family;
-//  text-align: center;
-//  margin: 0;}
-// .flexbox-item {
-//  width: 168px;
-//  height:100px}
-
-
 // Email newsletter container
 .newsletter {
    // background: $white;
@@ -35,6 +23,7 @@ legend {
     margin-bottom: 0,5rem;
     line-height: inherit;
     font-size: 32px;
+    font-weight: 900;
 }
 .mb-3 {
     margin-bottom: 1rem !important;
@@ -68,8 +57,11 @@ input[type=checkbox] {
     cursor: pointer;
 }
 label {
-    font-weight: 700;
+    font-weight: bold;
     margin-left: 30px;
+}
+label a {
+    text-decoration: underline;
 }
   
 .btn-primary {
@@ -79,26 +71,38 @@ label {
 }
 
 //badges
+
 .badges ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
-    margin: 20px 40px;
-} 
-.badges li {
-    padding: 20px;
+    display: none;
 }
+@media only screen and (min-width: $break-m) {
+    .badges ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        margin: 20px 40px;
+        li {
+            padding: 20px;
+            img {
+                width: 100%;
+            }
+        }
+    } 
+}
+
+
+
 
 //styling for buttons in general
 .btn {
-    height: 56px;
     line-height: 35px;
     padding: 5px 15px;
+    font-size: 1.063rem;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.063rem;
     border-radius: 3px;
     white-space: normal;
     margin: 10px;

@@ -20,15 +20,36 @@
     height: 400px;
     width: auto;
 }
+.hero_container-left {
+    text-align: center;
+}
+@media only screen and (min-width: $break-l){
+    .hero_container-left {
+        text-align: left;
+    }
+}
 .hero_text {
     color: $white;
     padding: 20px;
+    font-weight: 900;
+}
+.hero_1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.hero_2 {
+    font-size: 1.25rem;
 }
 .btn-hero {
     color: $white;
     background-color: $color-bg;
     border-color: $color-bg;
     margin: 80px 20px;
+    font-weight: 900;
+}
+.bi-arrow-right {
+    margin-left: 12px;
+    margin-right: -4px;
 }
 
 .hero_container-center img {

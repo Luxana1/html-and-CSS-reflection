@@ -72,35 +72,36 @@ hr:not([size]) {
 .sitemap {
     font-size: 1rem;
 }
-// .licence .sitemap {
-//     margin: 0;
-// }
+
 //br with class "visible-xs" will break the line on mobile devices
 .visible-lg, .visible-md, .visible-sm, .visible-xs {
     display: none!important;
 }
 
-//    footer .bottom {
-//        display: flex;
-//        justify-content: space-between;
-//        border-top: 1px solid #888;
-//        font-size: .80rem;
-//        padding-top: 10px;
-//        margin-top: 10px;
-//    }
 
+// partnersbadges
+.bottom-futter, .partnersbadge ul {
+    display: none;
+}
+@media only screen and (min-width: $break-m) {
+    .bottom-footer {
+        padding: 50px 0;
+        margin: 0 20px;
+    }
+    .partnersbadge ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    .big_badge {
+        width: 100%;
+    }
+    .small_badge {
+        width: 80%;
+    }
+} 
 
-// partnersbadges 
-.bottom-footer {
-    padding: 50px 0;
-    margin: 0 20px;
-}
-.partnersbadge ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 @media (min-width: $break-xs) {
     footer .container .footer-row{
