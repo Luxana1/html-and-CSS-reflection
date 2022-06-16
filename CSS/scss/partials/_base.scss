@@ -55,10 +55,14 @@ input[type=checkbox] {
 .form-check-label {
     line-height: 32px;
     cursor: pointer;
+    margin-left: 30px;
+}
+.form-check-input:checked {
+    background-color: $color-bg;
+    border-color: $color-bg;
 }
 label {
     font-weight: bold;
-    margin-left: 30px;
 }
 label a {
     text-decoration: underline;
@@ -68,6 +72,11 @@ label a {
     color: $white;
     background-color: $color-bg;
     border-color: $color-bg;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(49, 40, 40);
+    border-color: rgb(49, 40, 40);
 }
 
 //badges

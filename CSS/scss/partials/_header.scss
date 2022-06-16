@@ -8,28 +8,28 @@
   justify-content: space-around;
   // align-items: center;
 }
-//for all screens (.inner only)
+//for all screens (inner and outer)
+.outer {
+  max-width: none;
+  margin: auto;
+}
 .inner {
   margin: 15px;
-  @media only screen and (min-width: $break-m) {
-    width: 750px;
-  }
-  @media only screen and (min-width: $break-l) {
-    width: 970px;
-  }
-  @media only screen and (min-width: $break-xl) {
-    width: 1200px;
-  }
+  max-width: none;
+  // @media only screen and (min-width: $break-m) {
+  //   width: 750px;
+  // }
+  // @media only screen and (min-width: $break-l) {
+  //   width: 970px;
+  // }
+  // @media only screen and (min-width: $break-xl) {
+  //   width: 1200px;
+  // }
 }
 
 p {
   margin: 0px;
 }
-.outer {
-  width: 100%;
-  margin: auto;
-}
-
 .search_container {
   display: none;
 }
@@ -124,6 +124,7 @@ button[name=search2] {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   .right-col {
     display: flex;
     flex-direction: row;
@@ -181,8 +182,8 @@ button[name=search2] {
 .menu_btn {
   display: flex;
   flex-direction: column;
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   justify-content: center;
   align-items: center;
   background-color: $color-bg;
@@ -214,12 +215,12 @@ button[name=search2] {
 .container_phone {
   align-items: center;
   padding-bottom: 3px;
-  margin: 0 15px;
+  margin: 15px;
   // width: 32px;
   // height: 32px;
   .fa-phone-volume {
     color: $color-bg;
-    font-size: 40px;
+    font-size: 30px;
   }
   @media only screen and (min-width: $break-m) {
     display: none;
@@ -466,20 +467,27 @@ background-color: $strawberry;
   left: 0;
   width: 100%;
   padding: 10px 0;
+  justify-content: flex-start;
   font-size: 13px;
   list-style-type: none;
+  // list-style-type: '\2014';
   filter: brightness(90%);
 }
 .drop-menu li {
-  margin-left: 20px;
+  // margin-left: 30px;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
+  margin: 0 20px;
 }
-.drop-menu li::before {
-  content: '\2014';
-  position: absolute;
-  margin-left: -45px;
+
+// .drop-menu li::before {
+//   position: absolute;
+//   margin-left: -45px;
+// }
+.drop-menu > li:not(:last-child) a:after {
+  content: "-";
+  padding-left: 20px;
 }
 
 .software-menu {

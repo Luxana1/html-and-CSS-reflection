@@ -39,6 +39,8 @@ footer ul li {
     font-size: .80rem;
     font-weight: 600;
     line-height: 1.3rem;
+}
+ol, ul {
     padding-left: 0;
 }
 footer a {
@@ -46,21 +48,25 @@ footer a {
     cursor: pointer;
     color: inherit;
 }
-//footer rule
-hr:not([size]) {
-    height: 1px;
-    color: $white;
+footer a:hover {
+    text-decoration: underline;
 }
+//footer rule
 .foot-rule {
     margin-bottom: 14px;
 }
 .bottom {
     margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #888;
+    font-size: .8125rem;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 .licence {
     list-style: none;
     text-decoration: none;
-    font-weight: 600;
     color: $white;
     display: flex;
     padding-top: 5px;
@@ -70,14 +76,33 @@ hr:not([size]) {
     margin-right: 10px;
 }
 .sitemap {
-    font-size: 1rem;
+    font-weight: 400;
 }
 
 //br with class "visible-xs" will break the line on mobile devices
 .visible-lg, .visible-md, .visible-sm, .visible-xs {
     display: none!important;
 }
-
+footer .bottom .social-media a {
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px 10px;
+    border-radius: 50%;
+    max-height: 38px;
+}
+footer .bottom .social-media a:hover.facebook {
+    background-color: #3b5998;
+}
+footer .bottom .social-media a:hover.twitter {
+    background-color: #00aced;
+}
+footer .bottom .social-media a:hover.instagram {
+    background-color: #d93175;
+}
+footer .bottom .social-media a:hover.linkedin {
+    background-color: #0077b5;
+}
 
 // partnersbadges
 .bottom-futter, .partnersbadge ul {
