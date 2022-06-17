@@ -100,6 +100,23 @@ button[name=search2] {
     display: flex;
     margin-top: -11px;
     margin-right: 50px;
+    @media only screen and (min-width: $break-l) {
+      display: none;
+      .search_button {
+        position: absolute;
+        width: 63px;
+        height: 56px;
+        font-size: 24px;
+        color: $white;
+        background-color: #999aa2;
+        border: 0;
+        border-radius: 0 3px 3px 0;
+        text-align: center;
+      }
+    }
+    @media only screen and (min-width: $break-xl) {
+      display: flex;
+    }
     .form {
       margin-top: 11px;
       position: relative;
@@ -113,22 +130,24 @@ button[name=search2] {
         font-size: 0.875rem;
         position: relative;
         outline: 0;
-      }
-      .search_button {
-        position: absolute;
-        width: 63px;
-        height: 56px;
-        font-size: 24px;
-        color: $white;
-        background-color: #999aa2;
-        border: 0;
-        border-radius: 0 3px 3px 0;
-        text-align: center;
+          // @media only screen and (min-width: $break-l) {
+          //   display: none;
+          // }
+        }
+        .search_button {
+          position: absolute;
+          width: 63px;
+          height: 56px;
+          font-size: 24px;
+          color: $white;
+          background-color: #999aa2;
+          border: 0;
+          border-radius: 0 3px 3px 0;
+          text-align: center;
+        }
       }
     }
-  }
-}
-  
+  } 
 }
 //-------------------logo, containers and top nav for mobile--------------------
 .navbar_logo {

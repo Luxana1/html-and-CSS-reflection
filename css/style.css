@@ -262,6 +262,29 @@ button[name=search2] {
     margin-top: -11px;
     margin-right: 50px;
   }
+}
+@media only screen and (min-width: 768px) and (min-width: 992px) {
+  .container_top .search_container {
+    display: none;
+  }
+  .container_top .search_container .search_button {
+    position: absolute;
+    width: 63px;
+    height: 56px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #999aa2;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1200px) {
+  .container_top .search_container {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
   .container_top .search_container .form {
     margin-top: 11px;
     position: relative;
