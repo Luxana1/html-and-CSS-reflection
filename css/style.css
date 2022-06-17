@@ -363,6 +363,10 @@ button[name=search2] {
   }
 }
 
+.menu_btn:hover {
+  background-color: #22242e;
+}
+
 .hamburger .title {
   display: block;
   font-size: 0.75rem;
@@ -379,6 +383,10 @@ button[name=search2] {
 .container_phone .fa-phone-volume {
   color: #333645;
   font-size: 30px;
+}
+.container_phone .fa-phone-volume:hover {
+  color: #22242e;
+  text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
   .container_phone {

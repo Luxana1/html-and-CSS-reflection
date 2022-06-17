@@ -204,6 +204,9 @@ button[name=search2] {
     margin-left: 20px;
   }
 }
+.menu_btn:hover {
+  background-color: $color-hover;
+}
 .hamburger .title {
   display: block;
     font-size: .75rem;
@@ -222,6 +225,10 @@ button[name=search2] {
   .fa-phone-volume {
     color: $color-bg;
     font-size: 30px;
+  }
+  .fa-phone-volume:hover {
+    color: $color-hover;
+    text-decoration: underline;
   }
   //---------------------phone icon no display for nediun screens-------------------
   @media only screen and (min-width: $break-m) {
