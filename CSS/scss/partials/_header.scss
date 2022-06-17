@@ -9,6 +9,22 @@
 }
 
 //--------------------for all screens (inner and outer)----------------------------
+  header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  text-align: center;
+  background-color: $white;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
 .outer {
   max-width: none;
   margin: auto;
@@ -239,39 +255,6 @@ button[name=search2] {
   padding-right: 8px;
 }
 
-//general container display
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-}
-
-@media only screen and (min-width: $break-xs) {
-    header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    z-index: 1;
-    text-align: center;
-    background-color: $white;
-
-    #logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-  }
-}
-
-  .top_btn {
-    display: flex;
-    align-items: center;
-  }
-
-
 //---------navigation menu with dropdown for large screens and up----------------
 header {
   @media only screen and (min-width: $break-l) { 
@@ -289,7 +272,7 @@ header {
 }
 
 
-//-----------------menu buttons and dropdown submenu------------------------------
+//---------------------menu buttons and dropdown submenu------------------------------
 .s {
   font-size: 10px;
   padding-bottom: 1px;
@@ -307,7 +290,7 @@ header {
   font-size: 1.4rem;
   padding-bottom: 10px;
 }
-//----------------7 buttons colors and hover effect-----------------------------
+//----------------------7 buttons colors and hover effect-----------------------------
 .software-btn .icon {
   color: $grayblue;
 }
@@ -413,21 +396,6 @@ header {
   color: $white;
 }
 
-//------------------------------icons svg---------------------------------
-.fa-th::before {
-  content: "\f00a";
-}
-.bi-display::before {
-  content: "\f302";
-}
-.bi-bar-chart-fill::before {
-  content: "\f17a";
-}
-.bi-code-slash::before {
-  content: "\f2c6";
-}
-
-
 //-----------dropdown menu 7 buttons general style and hover effect-------------------
 .nav-item {
   border-left: 1px solid hsla(0,0%,100%,.1);
@@ -463,7 +431,7 @@ header {
   padding-left: 20px;
 }
 
-//---------------------------------7 menu buttons colors----------------------------
+//---------------------------------7 menu buttons colors-------------------------------
 .software-menu {
   background-color: $grayblue;
 }
@@ -486,7 +454,7 @@ header {
   background-color: $strawberry;
 }
 
-//------------------------------anchor hover effect-----------------------
+//---------------------------------anchor hover effect----------------------------
 a, a:hover {
   text-decoration: none;
   color: inherit;

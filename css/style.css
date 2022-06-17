@@ -173,6 +173,24 @@ label a {
   justify-content: space-around;
 }
 
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
 .outer {
   max-width: none;
   margin: auto;
@@ -398,35 +416,6 @@ button[name=search2] {
   padding-right: 8px;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-}
-
-@media only screen and (min-width: 0px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    z-index: 1;
-    text-align: center;
-    background-color: #ffffff;
-  }
-  header #logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-.top_btn {
-  display: flex;
-  align-items: center;
-}
-
 @media only screen and (min-width: 992px) {
   header #main_nav {
     position: relative;
@@ -625,22 +614,6 @@ button[name=search2] {
 
 .training-btn:hover svg, .training:hover .btn {
   color: #ffffff;
-}
-
-.fa-th::before {
-  content: "\f00a";
-}
-
-.bi-display::before {
-  content: "\f302";
-}
-
-.bi-bar-chart-fill::before {
-  content: "\f17a";
-}
-
-.bi-code-slash::before {
-  content: "\f2c6";
 }
 
 .nav-item {
