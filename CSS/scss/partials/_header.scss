@@ -6,9 +6,9 @@
   letter-spacing: .4px;
   flex-direction: row;
   justify-content: space-around;
-  // align-items: center;
 }
-//for all screens (inner and outer)
+
+//--------------------for all screens (inner and outer)----------------------------
 .outer {
   max-width: none;
   margin: auto;
@@ -28,13 +28,12 @@
   //   width: 1200px;
   // }
 }
-
+//-------------------------Header top navigation style-----------------------------
 p {
   margin: 0px;
 }
-.search_container {
-  display: none;
-}
+
+//-------------------------Search bar for mobile screens---------------------------
 .search_container2 {
   width: 100%;
 }
@@ -68,6 +67,11 @@ button[name=search2] {
   position: absolute;
   right: 0;
 }
+.search_container {
+  display: none;
+}
+
+//-------------------------Search bar for bigger screens---------------------------
 @media only screen and (min-width: $break-m) {
   .container_top {
     flex-wrap: nowrap;
@@ -110,7 +114,7 @@ button[name=search2] {
 }
   
 }
-//for mobile view
+//-------------------logo, containers and top nav for mobile--------------------
 .navbar_logo {
   max-width: 402px;
   width: 100%;
@@ -138,13 +142,14 @@ button[name=search2] {
 .container_button {
   display: none;
 }
+//---------------------------container button for large screens------------------
 .container_button {
   @media only screen and (min-width: $break-l) {
     display: flex;
     margin-left: 40px;
   }
 }
-//buttons styling
+//------------------------------buttons styling-----------------------------------
 .btn_1 {
   display: inline;
   width: 141px;
@@ -181,7 +186,7 @@ button[name=search2] {
   border: 0;
 }
 
-//burger menu styling for mobile view
+//------------------------------burger menu styling------------------------------
 .menu_btn {
   display: flex;
   flex-direction: column;
@@ -192,29 +197,22 @@ button[name=search2] {
   background-color: $color-bg;
   color: $white;
   padding: 5px;
-  margin-right: 5px;
+  //margin-right: 5px;
   border-radius: 3px;
+  //----------------------------burger menu margin for mediun screens------------
   @media only screen and (min-width: $break-m) {
     margin-left: 20px;
   }
 }
-.burger-container {
-  position: relative;
-  width: 100%;
-  margin: auto 0;
-}
-.bi .bi-list {
+.hamburger .title {
   display: block;
-  position: relative;
-  background-color: $white;
-}
-.menu-burger {
-  svg {
-    width: 33px;
-  }
+    font-size: .75rem;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 0;
 }
 
-//phone icon that appears on small devices
+//---------------------------------phone icon----------------------------------
 .container_phone {
   align-items: center;
   padding-bottom: 3px;
@@ -225,6 +223,7 @@ button[name=search2] {
     color: $color-bg;
     font-size: 30px;
   }
+  //---------------------phone icon no display for nediun screens-------------------
   @media only screen and (min-width: $break-m) {
     display: none;
   }
@@ -266,12 +265,9 @@ button[name=search2] {
   }
 
 
-//general heading style
+//---------navigation menu with dropdown for large screens and up----------------
 header {
-  @media only screen and (min-width: $break-l) {
-    nav {
-      display: flex !important;
-    }
+  @media only screen and (min-width: $break-l) { 
     #main_nav {
       position: relative;
       background-color: $color-bg;
@@ -279,11 +275,14 @@ header {
       border-bottom: 1px solid $white;
       width: 100%;
     }
+    nav {
+      display: flex !important;
+    }
   }
 }
 
 
-//menu buttons and dropdown submenu
+//-----------------menu buttons and dropdown submenu------------------------------
 .s {
   font-size: 10px;
   padding-bottom: 1px;
@@ -301,7 +300,7 @@ header {
   font-size: 1.4rem;
   padding-bottom: 10px;
 }
-
+//----------------7 buttons colors and hover effect-----------------------------
 .software-btn .icon {
   color: $grayblue;
 }
@@ -405,10 +404,9 @@ header {
 }
 .training-btn:hover svg, .training:hover .btn {
   color: $white;
-  
 }
 
-// icons svg
+//------------------------------icons svg---------------------------------
 .fa-th::before {
   content: "\f00a";
 }
@@ -422,39 +420,8 @@ header {
   content: "\f2c6";
 }
 
-//menu drop
-.software-bar, .design-menu {
-  background-color: $grayblue;
-}
-.support-bar, .design-menu {
-  background-color: $blue;
-}
-.dogital-bar, .design-menu {
-  background-color: $green;
-}
-.telecoms-bar, .design-menu {
-background-color: $strawberry;
-}
-.design-bar, .design-menu {
-  background-color: $purple;
-}
-.securit-bar, .design-menu {
-  background-color: $rasberry;
-}
-.training-bar, .design-menu {
-  background-color: $strawberry;
-}
-.back-bar {
-  background-color: white;
-  display: none;
-  position: absolute;
-  z-index: 1;
-  bottom: -45px;
-  height: 45px;
-  width: 100vw;
-}
 
-//dropdown menu general style
+//-----------dropdown menu 7 buttons general style and hover effect-------------------
 .nav-item {
   border-left: 1px solid hsla(0,0%,100%,.1);
   border-right: 1px solid rgba(0,0,0,.25);
@@ -484,15 +451,12 @@ background-color: $strawberry;
   margin: 0 20px;
 }
 
-// .drop-menu li::before {
-//   position: absolute;
-//   margin-left: -45px;
-// }
 .drop-menu > li:not(:last-child) a:after {
   content: "-";
   padding-left: 20px;
 }
 
+//---------------------------------7 menu buttons colors----------------------------
 .software-menu {
   background-color: $grayblue;
 }
@@ -515,6 +479,7 @@ background-color: $strawberry;
   background-color: $strawberry;
 }
 
+//------------------------------anchor hover effect-----------------------
 a, a:hover {
   text-decoration: none;
   color: inherit;

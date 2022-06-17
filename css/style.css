@@ -80,21 +80,6 @@ legend {
   margin-bottom: 1rem !important;
 }
 
-.col-lg-6 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.col-4 {
-  flex: 0 0 auto;
-  width: 33.3%;
-}
-
-.col-8 {
-  flex: 0 0 auto;
-  width: 66.6%;
-}
-
 .asterisk {
   color: #d64541;
 }
@@ -204,10 +189,6 @@ p {
   margin: 0px;
 }
 
-.search_container {
-  display: none;
-}
-
 .search_container2 {
   width: 100%;
 }
@@ -243,6 +224,10 @@ button[name=search2] {
   height: 47px;
   position: absolute;
   right: 0;
+}
+
+.search_container {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -370,7 +355,6 @@ button[name=search2] {
   background-color: #333645;
   color: #ffffff;
   padding: 5px;
-  margin-right: 5px;
   border-radius: 3px;
 }
 @media only screen and (min-width: 768px) {
@@ -379,20 +363,12 @@ button[name=search2] {
   }
 }
 
-.burger-container {
-  position: relative;
-  width: 100%;
-  margin: auto 0;
-}
-
-.bi .bi-list {
+.hamburger .title {
   display: block;
+  font-size: 0.75rem;
+  line-height: 1;
   position: relative;
-  background-color: #ffffff;
-}
-
-.menu-burger svg {
-  width: 33px;
+  margin-bottom: 0;
 }
 
 .container_phone {
@@ -444,15 +420,15 @@ button[name=search2] {
 }
 
 @media only screen and (min-width: 992px) {
-  header nav {
-    display: flex !important;
-  }
   header #main_nav {
     position: relative;
     background-color: #333645;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
     width: 100%;
+  }
+  header nav {
+    display: flex !important;
   }
 }
 
@@ -657,44 +633,6 @@ button[name=search2] {
 
 .bi-code-slash::before {
   content: "\f2c6";
-}
-
-.software-bar, .design-menu {
-  background-color: #67809f;
-}
-
-.support-bar, .design-menu {
-  background-color: #4183d7;
-}
-
-.dogital-bar, .design-menu {
-  background-color: #2ecc71;
-}
-
-.telecoms-bar, .design-menu {
-  background-color: #d64541;
-}
-
-.design-bar, .design-menu {
-  background-color: #926fb1;
-}
-
-.securit-bar, .design-menu {
-  background-color: #f62459;
-}
-
-.training-bar, .design-menu {
-  background-color: #d64541;
-}
-
-.back-bar {
-  background-color: white;
-  display: none;
-  position: absolute;
-  z-index: 1;
-  bottom: -45px;
-  height: 45px;
-  width: 100vw;
 }
 
 .nav-item {
