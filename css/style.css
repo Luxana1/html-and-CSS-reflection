@@ -259,12 +259,14 @@ button[name=search2] {
   }
   .container_top .search_container {
     display: flex;
-    margin-top: -11px;
-    margin-right: 50px;
+    width: 100%;
   }
   .container_top .search_container .form {
-    margin-top: 11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
+    width: 100%;
   }
   .container_top .search_container .form .search_form {
     background-color: #E5E5E5;
@@ -290,12 +292,24 @@ button[name=search2] {
   }
 }
 @media only screen and (min-width: 992px) {
-  .form {
-    margin-top: 11px;
-    position: relative;
+  .container_top .search_container .form .search_form {
+    display: none;
   }
-  .form .search_button {
+  .container_top .search_container .form .search_button {
+    position: relative;
     border-radius: 3px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container_top .search_container .form .search_form {
+    display: revert !important;
+    width: 90%;
+  }
+  .container_top .search_container .form .search_button {
+    position: absolute;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+    margin: 0px;
   }
 }
 .navbar_logo {
@@ -332,7 +346,6 @@ button[name=search2] {
 @media only screen and (min-width: 992px) {
   .container_button {
     display: flex;
-    margin-left: 40px;
   }
 }
 
