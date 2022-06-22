@@ -240,7 +240,6 @@ button[name=search2] {
   background-color: $color-bg;
   color: $white;
   padding: 5px;
-  //margin-right: 5px;
   border-radius: 3px;
   //----------------------------burger menu margin for mediun screens------------
   @media only screen and (min-width: $break-m) {
@@ -300,6 +299,7 @@ header {
 
 
 //---------------------menu buttons and dropdown submenu------------------------------
+//paragraph for drop btn style font size class="s"
 .s {
   font-size: 10px;
   padding-bottom: 1px;
@@ -435,8 +435,10 @@ header {
   display: none;
   flex-direction: row;
   position: absolute;
-  z-index: 2000;
-  left: 0;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  z-index: 10;
   width: 100%;
   padding: 10px 0;
   justify-content: flex-start;
@@ -446,16 +448,23 @@ header {
   filter: brightness(90%);
 }
 .drop-menu li {
-  // margin-left: 30px;
+  margin-left: 20px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.84rem;
   font-weight: 400;
-  margin: 0 20px;
 }
-
 .drop-menu > li:not(:last-child) a:after {
   content: "-";
   padding-left: 20px;
+}
+@media only screen and (min-width: $break-xl) {
+  .drop-menu li {
+    margin-left: 30px;
+  }
+  .drop-menu > li:not(:last-child) a:after {
+    content: "-";
+    padding-left: 30px;
+  }
 }
 
 //---------------------------------7 menu buttons colors-------------------------------
@@ -481,7 +490,7 @@ header {
   background-color: $strawberry;
 }
 
-//---------------------------------anchor hover effect----------------------------
+//---------------------------anchor and anchor hover effect----------------------------
 a, a:hover {
   text-decoration: none;
   color: inherit;

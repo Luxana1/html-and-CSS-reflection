@@ -651,8 +651,10 @@ button[name=search2] {
   display: none;
   flex-direction: row;
   position: absolute;
-  z-index: 2000;
-  left: 0;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  z-index: 10;
   width: 100%;
   padding: 10px 0;
   justify-content: flex-start;
@@ -662,10 +664,10 @@ button[name=search2] {
 }
 
 .drop-menu li {
+  margin-left: 20px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.84rem;
   font-weight: 400;
-  margin: 0 20px;
 }
 
 .drop-menu > li:not(:last-child) a:after {
@@ -673,6 +675,16 @@ button[name=search2] {
   padding-left: 20px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .drop-menu li {
+    margin-left: 30px;
+  }
+
+  .drop-menu > li:not(:last-child) a:after {
+    content: "-";
+    padding-left: 30px;
+  }
+}
 .software-menu {
   background-color: #67809f;
 }
