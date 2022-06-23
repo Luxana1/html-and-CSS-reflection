@@ -34,15 +34,6 @@
   width: 100%;
   max-width: none;
   --bs-gutter-x: 0;
-  // @media only screen and (min-width: $break-m) {
-  //   width: 750px;
-  // }
-  // @media only screen and (min-width: $break-l) {
-  //   width: 970px;
-  // }
-  // @media only screen and (min-width: $break-xl) {
-  //   width: 1200px;
-  // }
 }
 //-------------------------Header top navigation style-----------------------------
 p {
@@ -141,6 +132,9 @@ button[name=search2] {
       position: relative;
       border-radius: 3px;
     }
+    .search_button:hover {
+      background-color: #84858f;
+    }
   }
 }
 @media only screen and (min-width: $break-xl) {
@@ -210,6 +204,9 @@ button[name=search2] {
   text-transform: uppercase;
   border: 0;
 }
+.btn_1:hover {
+  background-color: #286abd;
+}
 
 .btn_2 {
   display: inline;
@@ -227,6 +224,9 @@ button[name=search2] {
   margin-left: 20px;
   text-transform: uppercase;
   border: 0;
+}
+.btn_2:hover {
+  background-color: #84858f;
 }
 
 //------------------------------burger menu styling------------------------------
