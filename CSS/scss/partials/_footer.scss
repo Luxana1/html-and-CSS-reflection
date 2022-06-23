@@ -1,7 +1,7 @@
 @use '../abstracts/index' as *;
 
 
-//top footer, services and offices
+//-----------------------------------------------footer top--------------------------------------
 .top-footer {
     background-color: $color-bg;
     padding: 47px 0 43px;
@@ -20,6 +20,7 @@ footer h4 {
     padding: 0 40px;
 }
 
+//----------------------------------------------services and offices---------------------------------
 .services, .offices {
     display: flex;
     flex-wrap: wrap;
@@ -51,10 +52,24 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-//footer rule
-.foot-rule {
-    margin-bottom: 14px;
+@media (min-width: $break-xs) {
+    footer .container .footer-row{
+        max-width: 480px;
+        margin: 0 auto;
+        .services, .offices {
+            flex-direction: row;
+            justify-content: space-evenly;
+            .service, .office{
+                width: 225px;
+            }
+        }
+        .offices {
+            flex-wrap: wrap;
+        }
+    }
 }
+
+//--------------------------footer bottom: licence, sitemap and social media---------------------------
 .bottom {
     margin: 0 40px;
     display: flex;
@@ -104,7 +119,7 @@ footer .bottom .social-media a:hover.linkedin {
     background-color: #0077b5;
 }
 
-// partnersbadges
+//------------------------------------------partnersbadges----------------------------------------
 .bottom-futter, .partnersbadge ul {
     display: none;
 }
@@ -126,22 +141,3 @@ footer .bottom .social-media a:hover.linkedin {
         width: 80%;
     }
 } 
-
-
-@media (min-width: $break-xs) {
-    footer .container .footer-row{
-        max-width: 480px;
-        margin: 0 auto;
-        .services, .offices {
-            flex-direction: row;
-            justify-content: space-evenly;
-            .service, .office{
-                width: 225px;
-            }
-        }
-        .offices {
-            flex-wrap: wrap;
-        }
-    }
-
-}

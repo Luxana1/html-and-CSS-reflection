@@ -2,9 +2,8 @@
 /* Base -------------------------------*/
 
 
-// Email newsletter container
+//------------------------------Email newsletter container--------------------------------
 .newsletter {
-   // background: $white;
     background-color: $color-bg-light;
 }
 //newsletter h2
@@ -63,7 +62,7 @@ label {
 label a {
     text-decoration: underline;
 }
-  
+//subscribe button and it's hover effect
 .btn-primary {
     color: $white;
     background-color: $color-bg;
@@ -75,8 +74,7 @@ label a {
     border-color: rgb(49, 40, 40);
 }
 
-//badges
-
+//-----------------------------------top badges-----------------------------------
 .badges ul {
     display: none;
 }
@@ -97,10 +95,7 @@ label a {
     } 
 }
 
-
-
-
-//styling for buttons in general
+//---------------------------------general button styling--------------------------------
 .btn {
     line-height: 35px;
     padding: 5px 15px;

@@ -775,10 +775,22 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.foot-rule {
-  margin-bottom: 14px;
+@media (min-width: 0px) {
+  footer .container .footer-row {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  footer .container .footer-row .services, footer .container .footer-row .offices {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer .container .footer-row .services .service, footer .container .footer-row .services .office, footer .container .footer-row .offices .service, footer .container .footer-row .offices .office {
+    width: 225px;
+  }
+  footer .container .footer-row .offices {
+    flex-wrap: wrap;
+  }
 }
-
 .bottom {
   margin: 0 40px;
   display: flex;
@@ -858,22 +870,6 @@ footer .bottom .social-media a:hover.linkedin {
 
   .small_badge {
     width: 80%;
-  }
-}
-@media (min-width: 0px) {
-  footer .container .footer-row {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-  footer .container .footer-row .services, footer .container .footer-row .offices {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  footer .container .footer-row .services .service, footer .container .footer-row .services .office, footer .container .footer-row .offices .service, footer .container .footer-row .offices .office {
-    width: 225px;
-  }
-  footer .container .footer-row .offices {
-    flex-wrap: wrap;
   }
 }
 .container_middle {

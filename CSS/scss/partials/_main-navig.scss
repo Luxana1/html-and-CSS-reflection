@@ -1,26 +1,10 @@
 @use '../abstracts/index' as *;
 
-// .middle {
-//     padding: 50px 50px;
-
-//     @media only screen and (min-width: $break-s) {
-//         width: 500px;
-//     }
-//     @media only screen and (min-width: $break-m) {
-//         width: 800px;
-
-//     } 
-//     @media only screen and (min-width: $break-l) {
-//         width: 1000px;
-//     } 
-//     @media only screen and (min-width: $break-xl) {
-//         width: 1200px;
-//     } 
-// }
+//-------------------------------------container with 7 menu elements---------------------------------
 .container_middle {
     margin-top: 50px;
 }
-// 7 elements from menu (blocks in the middle) general style
+//----------------------------------------general style-----------------------------------------------
 .service-list {
     margin-top: -30px;
     padding: 0 40px;
@@ -65,7 +49,7 @@
     margin-bottom: 13px;
     font-weight: 600;
 }
-// 7 elements from menu but they're blocks in the middle colors and hover
+//-style for each of 7 menu elements and it's hover effect, colours and buttons----------------------
 
 .software svg {
     color: $white;
