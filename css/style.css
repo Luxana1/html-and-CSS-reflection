@@ -152,8 +152,17 @@ label a {
   .badges ul li {
     padding: 20px;
   }
-  .badges ul li img {
+  .badges ul li a img {
     width: 100%;
+  }
+  .badges ul li .coloured {
+    display: none;
+  }
+  .badges ul li:hover .grey {
+    display: none;
+  }
+  .badges ul li:hover .coloured {
+    display: inline;
   }
 }
 .btn {

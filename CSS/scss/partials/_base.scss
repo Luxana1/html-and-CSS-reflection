@@ -88,9 +88,18 @@ label a {
         margin: 20px 40px;
         li {
             padding: 20px;
-            img {
+            a img {
                 width: 100%;
             }
+            .coloured {
+                display: none;
+            }
+        }
+        li:hover .grey {
+            display: none;
+        }
+        li:hover .coloured {
+            display: inline;
         }
     } 
 }
