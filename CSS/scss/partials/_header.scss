@@ -7,6 +7,20 @@
   flex-direction: row;
   justify-content: space-around;
 }
+//-------------------------------------general container style----------------------------
+.container {
+  @media only screen and (min-width: $break-m) {
+      width: 750px;
+      
+  } 
+  @media only screen and (min-width: $break-l) {
+      width: 970;
+  } 
+
+  @media only screen and (min-width: $break-xl) {
+      width: 1200;
+  } 
+}
 
 //--------------------for all screens (inner and outer)----------------------------
   header {

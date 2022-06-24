@@ -18,14 +18,14 @@
 }
 
 @mixin main-nav-block {
+    font-weight: 400;
     border-radius: 50%;
-    text-align: center;
-    align-self: center;
     width: 60px;
     height: 60px;
-    margin-bottom: 17px;
-    font-size: 23px;
-    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 17px;
 }
 
 @mixin ul {

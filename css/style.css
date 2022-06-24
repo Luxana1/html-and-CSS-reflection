@@ -1,6 +1,7 @@
 .hero_container-img {
   background-image: linear-gradient(to left, rgba(141, 141, 142, 0.52), rgba(7, 0, 0, 0.73)), url(../img/home-3wAI.jpg);
-  background-size: 1300px;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 500px;
   width: auto;
 }
@@ -87,7 +88,7 @@ legend {
 }
 
 form {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 input[type=text], input[type=submit] {
@@ -159,20 +160,35 @@ label a {
   line-height: 35px;
   padding: 5px 15px;
   font-size: 1.063rem;
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   border-radius: 3px;
   white-space: normal;
-  margin: 10px;
 }
 
 * {
   margin: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   letter-spacing: 0.4px;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200;
+  }
 }
 
 header {
@@ -885,24 +901,22 @@ footer .bottom .social-media a:hover.linkedin {
     width: 80%;
   }
 }
-.container_middle {
-  margin-top: 50px;
-}
-
 .service-list {
   margin-top: -30px;
-  padding: 0 40px;
+  padding: 0 30px;
+  background-color: rgb(246, 246, 246);
 }
 
 .service-list .block {
   text-decoration: none;
   margin-top: 30px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .block {
   display: block;
-  border: 1px solid #666;
+  border: 1px solid #ccc;
   border-radius: 3px;
   padding: 30px;
 }
@@ -914,7 +928,7 @@ footer .bottom .social-media a:hover.linkedin {
 
 .service-list h3 {
   font-size: 1.1rem;
-  font-weight: 900;
+  font-weight: 400;
   position: relative;
   padding-bottom: 17px;
   margin: 0 0 11px;
@@ -934,23 +948,23 @@ footer .bottom .social-media a:hover.linkedin {
 }
 
 .service-list p {
-  font-size: 0.81rem;
+  font-size: 0.8125rem;
   line-height: 1.375rem;
   margin-bottom: 13px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.software svg {
+.software-icon {
   color: #ffffff;
   background-color: #67809f;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .software:hover {
@@ -958,7 +972,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #67809f;
 }
 
-.software:hover svg, .software:hover .btn {
+.software:hover .software-icon, .software:hover svg, .software:hover .btn {
   color: #67809f;
   background-color: #ffffff;
 }
@@ -968,17 +982,17 @@ footer .bottom .social-media a:hover.linkedin {
   color: #ffffff;
 }
 
-.support svg {
+.support-icon {
   color: #ffffff;
   background-color: #4183d7;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .support:hover {
@@ -986,7 +1000,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #4183d7;
 }
 
-.support:hover svg, .support:hover .btn {
+.support:hover .support-icon, .support:hover svg, .support:hover .btn {
   color: #4183d7;
   background-color: #ffffff;
 }
@@ -996,17 +1010,17 @@ footer .bottom .social-media a:hover.linkedin {
   color: #ffffff;
 }
 
-.marketing svg {
+.marketing-icon {
   color: #ffffff;
   background-color: #2ecc71;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .marketing:hover {
@@ -1014,7 +1028,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #2ecc71;
 }
 
-.marketing:hover svg, .marketing:hover .btn {
+.marketing:hover .marketing-icon, .marketing:hover svg, .marketing:hover .btn {
   color: #2ecc71;
   background-color: #ffffff;
 }
@@ -1024,17 +1038,17 @@ footer .bottom .social-media a:hover.linkedin {
   color: #ffffff;
 }
 
-.telecoms svg {
+.telecoms-icon {
   color: #ffffff;
   background-color: #d64541;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .telecoms:hover {
@@ -1042,7 +1056,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #d64541;
 }
 
-.telecoms:hover svg, .telecoms:hover .btn {
+.telecoms:hover .telecoms-icon, .telecoms:hover svg, .telecoms:hover .btn {
   color: #d64541;
   background-color: #ffffff;
 }
@@ -1052,17 +1066,17 @@ footer .bottom .social-media a:hover.linkedin {
   color: #ffffff;
 }
 
-.design svg {
+.design-icon {
   color: #ffffff;
   background-color: #926fb1;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .design:hover {
@@ -1070,7 +1084,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #926fb1;
 }
 
-.design:hover svg, .design:hover .btn {
+.design:hover .design-icon, .design:hover svg, .design:hover .btn {
   color: #926fb1;
   background-color: #ffffff;
 }
@@ -1080,17 +1094,17 @@ footer .bottom .social-media a:hover.linkedin {
   color: #ffffff;
 }
 
-.security svg {
+.security-icon {
   color: #ffffff;
   background-color: #f62459;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .security:hover {
@@ -1098,7 +1112,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #f62459;
 }
 
-.security:hover svg, .security:hover .btn {
+.security:hover .security-icon, .security:hover svg, .security:hover .btn {
   color: #f62459;
   background-color: #ffffff;
 }
@@ -1108,17 +1122,17 @@ footer .bottom .social-media a:hover.linkedin {
   color: #ffffff;
 }
 
-.training svg {
+.training-icon {
   color: #ffffff;
   background-color: #d64541;
+  font-weight: 400;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
   width: 60px;
   height: 60px;
-  margin-bottom: 17px;
-  font-size: 23px;
-  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 17px;
 }
 
 .training:hover {
@@ -1126,7 +1140,7 @@ footer .bottom .social-media a:hover.linkedin {
   background-color: #d64541;
 }
 
-.training:hover svg, .training:hover .btn {
+.training:hover .training-icon, .training:hover svg, .training:hover .btn {
   color: #d64541;
   background-color: #ffffff;
 }
@@ -1134,6 +1148,11 @@ footer .bottom .social-media a:hover.linkedin {
 .training .btn {
   background-color: #d64541;
   color: #ffffff;
+}
+
+svg, svg:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*!

@@ -1,22 +1,24 @@
 @use '../abstracts/index' as *;
 
 //-------------------------------------container with 7 menu elements---------------------------------
-.container_middle {
-    margin-top: 50px;
-}
+// .container_middle {
+//     margin-top: 50px;
+// }
 //----------------------------------------general style-----------------------------------------------
 .service-list {
     margin-top: -30px;
-    padding: 0 40px;
+    padding: 0 30px;
+    background-color: rgb(246, 246, 246);
 }
 .service-list .block {
     text-decoration: none;
     margin-top: 30px;
     text-align: center;
+    background-color: $white;
 }
 .block {
     display: block;
-    border: 1px solid $color-text;
+    border: 1px solid #ccc;
     border-radius: 3px;
     padding: 30px;
 }
@@ -26,7 +28,7 @@
 }
 .service-list h3 {
    font-size: 1.1rem; 
-   font-weight: 900;
+   font-weight: 400;
    position: relative;
    padding-bottom: 17px;
    margin: 0 0 11px;
@@ -44,14 +46,14 @@
     background-color: $color-text-primary;
 }
 .service-list p {
-    font-size: .81rem;
+    font-size: .8125rem;
     line-height: 1.375rem;
     margin-bottom: 13px;
-    font-weight: 600;
+    font-weight: 400;
 }
 //-style for each of 7 menu elements and it's hover effect, colours and buttons----------------------
 
-.software svg {
+.software-icon {
     color: $white;
     background-color: $grayblue;
     @include main-nav-block;
@@ -60,7 +62,7 @@
     color: $white;
     background-color: $grayblue;
 }
-  .software:hover svg, .software:hover .btn {
+.software:hover .software-icon, .software:hover svg, .software:hover .btn {
     color: $grayblue;
     background-color: $white;
 }
@@ -69,7 +71,7 @@
     color: $white;
 }
 
-.support svg {
+.support-icon {
     color: $white;
     background-color: $blue;
     @include main-nav-block;
@@ -78,7 +80,7 @@
     color: $white;
     background-color: $blue;
 }
-  .support:hover svg, .support:hover .btn {
+.support:hover .support-icon, .support:hover svg, .support:hover .btn {
     color: $blue;
     background-color: $white;
 }
@@ -87,7 +89,7 @@
     color: $white;
 }
 
-.marketing svg {
+.marketing-icon {
     color: $white;
     background-color: $green;
     @include main-nav-block;
@@ -96,7 +98,7 @@
     color: $white;
     background-color: $green;
 }
-  .marketing:hover svg, .marketing:hover .btn {
+.marketing:hover .marketing-icon, .marketing:hover svg, .marketing:hover .btn {
     color: $green;
     background-color: $white;
 }
@@ -105,7 +107,7 @@
     color: $white;
 }
 
-.telecoms svg {
+.telecoms-icon {
     color: $white;
     background-color: $strawberry;
     @include main-nav-block;
@@ -114,7 +116,7 @@
     color: $white;
     background-color: $strawberry;
 }
-  .telecoms:hover svg, .telecoms:hover .btn {
+.telecoms:hover .telecoms-icon, .telecoms:hover svg, .telecoms:hover .btn {
     color: $strawberry;
     background-color: $white;
 }
@@ -123,7 +125,7 @@
     color: $white;
 }
 
-.design svg {
+.design-icon {
     color: $white;
     background-color: $purple;
     @include main-nav-block;
@@ -132,7 +134,7 @@
     color: $white;
     background-color: $purple;
 }
-  .design:hover svg, .design:hover .btn {
+.design:hover .design-icon, .design:hover svg, .design:hover .btn {
     color: $purple;
     background-color: $white;
 }
@@ -141,7 +143,7 @@
     color: $white;
 }
 
-.security svg {
+.security-icon {
     color: $white;
     background-color: $rasberry;
     @include main-nav-block;
@@ -150,7 +152,7 @@
     color: $white;
     background-color: $rasberry;
 }
-  .security:hover svg, .security:hover .btn {
+.security:hover .security-icon, .security:hover svg, .security:hover .btn {
     color: $rasberry;
     background-color: $white;
 }
@@ -159,7 +161,7 @@
     color: $white;
 }
 
-.training svg {
+.training-icon {
     color: $white;
     background-color: $strawberry;
     @include main-nav-block;
@@ -168,11 +170,15 @@
     color: $white;
     background-color: $strawberry;
 }
-  .training:hover svg, .training:hover .btn {
+.training:hover .training-icon, .training:hover svg, .training:hover .btn {
     color: $strawberry;
     background-color: $white;
 }
 .training .btn {
     background-color: $strawberry;
     color: $white;
+}
+svg, svg:hover {
+    text-decoration: none;
+    color: inherit;
 }
