@@ -140,4 +140,13 @@ footer .bottom .social-media a:hover.linkedin {
     .small_badge {
         width: 80%;
     }
+    .coloured {
+        display: none;
+    }
+    li:hover .grey {
+        display: none;
+    }
+    li:hover .coloured {
+        display: inline;
+    }
 } 
