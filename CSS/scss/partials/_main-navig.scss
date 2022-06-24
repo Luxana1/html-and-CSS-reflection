@@ -45,6 +45,9 @@
     display: block;
     background-color: $color-text-primary;
 }
+.service-list .block:hover h3::after {
+    background-color: $white;
+}
 .service-list p {
     font-size: .8125rem;
     line-height: 1.375rem;
