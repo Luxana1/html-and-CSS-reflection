@@ -27,6 +27,16 @@
   z-index: 3;
 }
 
+.content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .banner .content_container {
   text-align: center;
   padding-top: 100px;
@@ -59,8 +69,7 @@
   color: #ffffff;
   background-color: #67809f;
   border-color: #67809f;
-  margin: 80px 20px;
-  font-weight: 900;
+  margin: 8px 20px;
 }
 
 .btn-hero:hover {
@@ -959,6 +968,7 @@ footer .bottom .social-media a:hover.linkedin {
 .block {
   display: block;
   border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   padding: 30px;
 }
