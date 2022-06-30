@@ -1,18 +1,41 @@
-.hero_container-img {
-  background-image: linear-gradient(to left, rgba(141, 141, 142, 0.52), rgba(7, 0, 0, 0.73)), url(../img/home-3wAI.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: auto;
+.hero .hero-container-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-.hero_container-left {
+.img-cover {
+  position: relative;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-cover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(270deg, transparent 25%, #000);
+  z-index: 3;
+}
+
+.banner .content_container {
   text-align: center;
   padding-top: 100px;
+  position: relative;
+  z-index: 4;
 }
 
 @media only screen and (min-width: 992px) {
-  .hero_container-left {
+  .banner .content_container {
     text-align: left;
   }
 }
@@ -192,12 +215,12 @@ label a {
 }
 @media only screen and (min-width: 992px) {
   .container {
-    width: 970;
+    width: 970px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .container {
-    width: 1200;
+    width: 1200px;
   }
 }
 
@@ -216,7 +239,6 @@ header {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
 }
 
 .outer {
@@ -331,7 +353,7 @@ button[name=search2] {
     background-color: #84858f;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .container_top .search_container .form .search_form {
     display: revert !important;
     width: 90%;
@@ -714,7 +736,7 @@ button[name=search2] {
   padding-left: 20px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1260px) {
   .drop-menu li {
     margin-left: 30px;
   }
@@ -924,9 +946,7 @@ footer .bottom .social-media a:hover.linkedin {
   }
 }
 .service-list {
-  margin-top: -30px;
   padding: 0 30px;
-  background-color: rgb(246, 246, 246);
 }
 
 .service-list .block {
