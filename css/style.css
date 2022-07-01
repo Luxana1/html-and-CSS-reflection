@@ -28,7 +28,6 @@
 }
 
 .content {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,8 +38,8 @@
 
 .banner .content_container {
   text-align: center;
-  padding-top: 100px;
-  position: relative;
+  position: absolute;
+  margin-top: -1000px;
   z-index: 4;
 }
 
@@ -955,9 +954,14 @@ footer .bottom .social-media a:hover.linkedin {
   }
 }
 .service-list {
-  padding: 0 30px;
+  margin: 0 -5px;
 }
 
+@media only screen and (min-width: 1260px) {
+  .service-list .row {
+    margin: 0 -50px;
+  }
+}
 .service-list .block {
   text-decoration: none;
   margin-top: 30px;
@@ -1010,6 +1014,25 @@ footer .bottom .social-media a:hover.linkedin {
   font-weight: 400;
 }
 
+@media only screen and (min-width: 768px) {
+  .visible-md {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .visible-lg {
+    display: block !important;
+  }
+
+  .visible-md {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  .visible-lg {
+    display: none !important;
+  }
+}
 .software-icon {
   color: #ffffff;
   background-color: #67809f;

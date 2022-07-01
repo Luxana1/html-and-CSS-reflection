@@ -38,7 +38,7 @@
     z-index: 3;
 }
 .content {
-    position: absolute;
+    // position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,8 +48,8 @@
 }
 .banner .content_container {
     text-align: center;
-    padding-top: 100px;
-    position: relative;
+    position: absolute;
+    margin-top: -1000px;
     z-index: 4;
 }
 @media only screen and (min-width: $break-l){
