@@ -6,21 +6,7 @@
 .newsletter {
     background-color: $color-bg-light;
 }
-//newsletter h2
-.sr-only {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
 legend {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 0,5rem;
-    line-height: inherit;
     font-size: 32px;
     font-weight: 900;
 }
@@ -35,17 +21,29 @@ form {
  }    
 
 input[type=text], input[type=submit] {
-    width: 80%;
+    width: 100%;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    height: 47px;
+    border-radius: 0px;
   }
   
 input[type=checkbox] {
     margin-top: 16px;
     margin-bottom: -45px;
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
     border: 3px solid $color-bg;
+  }
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+input[type=checkbox]:active {
+    outline: none;
+    border: none;
+  }
+input[type=checkbox]:focus {
+    outline: 0;
   }
 .form-check-label {
     line-height: 32px;
@@ -87,7 +85,29 @@ label a {
         justify-content: space-between;
         margin: 20px 40px;
         li {
+            position: relative;
             padding: 20px;
+            a .description {
+                display: none;
+                position: absolute;
+                bottom: 100%;
+                left: -200px;
+                right: -200px;
+                .box {
+                    background-color: $color-bg;
+                    color: $white;
+                    padding: 20px;
+                    font-size: .875rem;
+                    max-width: 260px;
+                    margin: 0 auto 50px;
+                }
+                .arrow {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    margin-left:  -36px;
+                }
+            }
             a img {
                 width: 100%;
             }
