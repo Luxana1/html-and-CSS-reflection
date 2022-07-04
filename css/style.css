@@ -28,6 +28,7 @@
 }
 
 .content {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +39,6 @@
 
 .banner .content_container {
   text-align: center;
-  position: absolute;
-  margin-top: -1000px;
   z-index: 4;
 }
 
@@ -84,6 +83,24 @@
 
 .hero_container-center img {
   width: 100%;
+}
+
+.banner-dots {
+  position: absolute;
+  display: inherit;
+  bottom: 42px;
+  z-index: 4;
+}
+
+.banner-dots .dot {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px;
+  color: #ffffff;
+}
+
+.banner-dots .dot .bi-record2-fill {
+  display: none;
 }
 
 /* Base -------------------------------*/

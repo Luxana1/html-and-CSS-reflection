@@ -38,7 +38,7 @@
     z-index: 3;
 }
 .content {
-    // position: absolute;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,8 +48,6 @@
 }
 .banner .content_container {
     text-align: center;
-    position: absolute;
-    margin-top: -1000px;
     z-index: 4;
 }
 @media only screen and (min-width: $break-l){
@@ -88,4 +86,19 @@
 
 .hero_container-center img {
     width: 100%;
+}
+.banner-dots {
+    position: absolute;
+    display: inherit;
+    bottom: 42px;
+    z-index: 4;
+}
+.banner-dots .dot {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+    color: $white;
+}
+.banner-dots .dot .bi-record2-fill {
+    display: none;
 }
