@@ -148,6 +148,8 @@ input[type=checkbox]:hover {
 
 .form-check-input:focus {
   outline: none;
+  border-color: #333645;
+  box-shadow: none;
 }
 
 .form-check-label {

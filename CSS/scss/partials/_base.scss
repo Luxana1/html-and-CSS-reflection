@@ -40,6 +40,8 @@ input[type=checkbox]:hover {
 }
 .form-check-input:focus {
     outline: none;
+    border-color: $color-bg;
+    box-shadow: none;
   }
 .form-check-label {
     line-height: 32px;
