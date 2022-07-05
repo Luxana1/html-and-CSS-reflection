@@ -66,6 +66,9 @@
     border-color: $grayblue;
     margin: 8px 20px;
 }
+.btn:focus {
+    box-shadow: none;
+}
 .btn-hero:hover {
     color: $white;
     border-color: #526781;

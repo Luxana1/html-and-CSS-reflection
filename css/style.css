@@ -71,6 +71,10 @@
   margin: 8px 20px;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 .btn-hero:hover {
   color: #ffffff;
   border-color: #526781;
