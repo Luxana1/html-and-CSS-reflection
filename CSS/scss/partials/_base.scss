@@ -96,16 +96,44 @@ label a {
                 .box {
                     background-color: $color-bg;
                     color: $white;
+                    text-align: center;
                     padding: 20px;
                     font-size: .875rem;
                     max-width: 260px;
-                    margin: 0 auto 50px;
+                    margin: 0 auto 44px;
+                    h3 {
+                        position: relative;
+                        font-size: 1.125rem;
+                        padding-bottom: 17px;
+                        margin: 0 0 11px;
+                    }
+                    h3::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 28px;
+                        height: 3px;
+                        display: block;
+                        background-color: $white;
+                    }                                                           
+                    p {
+                        font-size: .8125rem;
+                        line-height: 1.375rem;
+                        margin-bottom: 0;
+                    }
                 }
                 .arrow {
                     position: absolute;
+                    display: inline-block;
                     bottom: 10px;
                     left: 50%;
-                    margin-left:  -36px;
+                    margin-left: -36px;
+                    border-color: #333645 transparent transparent;
+                    border-style: solid;
+                    border-width: 35px 36px 0;
                 }
             }
             a img {
@@ -120,6 +148,9 @@ label a {
         }
         li:hover .coloured {
             display: inline;
+        }
+        li:hover .description {
+            display: block;
         }
     } 
 }
