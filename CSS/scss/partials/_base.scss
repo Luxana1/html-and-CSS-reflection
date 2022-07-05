@@ -38,12 +38,8 @@ input[type=checkbox] {
 input[type=checkbox]:hover {
     cursor: pointer;
 }
-input[type=checkbox]:active {
+.form-check-input:focus {
     outline: none;
-    border: none;
-  }
-input[type=checkbox]:focus {
-    outline: 0;
   }
 .form-check-label {
     line-height: 32px;

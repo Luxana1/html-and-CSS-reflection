@@ -146,13 +146,8 @@ input[type=checkbox]:hover {
   cursor: pointer;
 }
 
-input[type=checkbox]:active {
+.form-check-input:focus {
   outline: none;
-  border: none;
-}
-
-input[type=checkbox]:focus {
-  outline: 0;
 }
 
 .form-check-label {
@@ -335,6 +330,7 @@ header {
 
 p {
   margin: 0px;
+  font-weight: 400;
 }
 
 .search_container2 {
@@ -898,7 +894,7 @@ footer ul li {
   color: #ffffff;
   list-style-type: none;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3rem;
 }
 
@@ -1083,7 +1079,7 @@ footer .bottom .social-media a:hover.linkedin {
   font-size: 0.8125rem;
   line-height: 1.375rem;
   margin-bottom: 13px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
