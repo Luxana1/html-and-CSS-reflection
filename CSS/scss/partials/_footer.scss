@@ -29,7 +29,7 @@ footer h4 {
 }
 .service, .office {
     width: 225px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .flex-column {
     flex-direction: column !important;
@@ -126,14 +126,15 @@ footer .bottom .social-media a:hover.linkedin {
 @media only screen and (min-width: $break-m) {
     .bottom-footer {
         padding: 50px 0;
-        margin: 0 20px;
     }
     .partnersbadge ul {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-between;
     } 
+    .partnersbadge ul:nth-of-type(2) {
+        margin-top: 20px;
+    }
     .big_badge {
         width: 100%;
     }

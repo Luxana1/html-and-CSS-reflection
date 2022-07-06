@@ -69,6 +69,8 @@
   background-color: #67809f;
   border-color: #67809f;
   margin: 8px 20px;
+  line-height: 50px !important;
+  padding: 5px 20px !important;
 }
 
 .btn:focus {
@@ -115,7 +117,7 @@
 
 legend {
   font-size: 32px;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .mb-3 {
@@ -889,7 +891,7 @@ footer h4 {
 
 .service, .office {
   width: 225px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .flex-column {
@@ -997,14 +999,16 @@ footer .bottom .social-media a:hover.linkedin {
 @media only screen and (min-width: 768px) {
   .bottom-footer {
     padding: 50px 0;
-    margin: 0 20px;
   }
 
   .partnersbadge ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
+  }
+
+  .partnersbadge ul:nth-of-type(2) {
+    margin-top: 20px;
   }
 
   .big_badge {
