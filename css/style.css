@@ -23,7 +23,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(270deg, transparent 25%, #000);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.919), rgba(0, 0, 0, 0.436));
   z-index: 3;
 }
 
@@ -361,7 +361,7 @@ input[name=search2] {
   border-radius: 3px 0 0 3px;
   padding-left: 10px;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 400;
   outline: 0;
 }
 
@@ -374,7 +374,7 @@ button[name=search2] {
   box-shadow: inset 0 0.875px rgba(0, 0, 0, 0.1);
   border-radius: 0 4px 4px 0;
   height: 47px;
-  position: absolute;
+  padding: 8px;
   right: 0;
 }
 
@@ -824,7 +824,6 @@ button[name=search2] {
   .drop-menu li {
     margin-left: 30px;
   }
-
   .drop-menu > li:not(:last-child) a:after {
     content: "-";
     padding-left: 30px;
@@ -1000,33 +999,26 @@ footer .bottom .social-media a:hover.linkedin {
   .bottom-footer {
     padding: 50px 0;
   }
-
   .partnersbadge ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
   }
-
   .partnersbadge ul:nth-of-type(2) {
     margin-top: 20px;
   }
-
   .big_badge {
     width: 100%;
   }
-
   .small_badge {
     width: 80%;
   }
-
   .coloured {
     display: none;
   }
-
   li:hover .grey {
     display: none;
   }
-
   li:hover .coloured {
     display: inline;
   }
@@ -1101,7 +1093,6 @@ footer .bottom .social-media a:hover.linkedin {
   .visible-lg {
     display: block !important;
   }
-
   .visible-md {
     display: none !important;
   }
