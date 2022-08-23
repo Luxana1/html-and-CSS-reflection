@@ -23,7 +23,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.919), rgba(0, 0, 0, 0.436));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.436));
   z-index: 3;
 }
 
@@ -327,6 +327,8 @@ header {
 .outer {
   max-width: none;
   margin: auto;
+  height: 110px;
+  width: 100%;
 }
 
 .inner {
@@ -403,13 +405,15 @@ button[name=search2] {
     width: 100%;
   }
   .container_top .search_container .form .search_form {
-    background-color: #E5E5E5;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
     border-right: none;
     box-shadow: inset 0 0.875px rgba(0, 0, 0, 0.1);
+    line-height: 1.42857143;
     height: 56px;
     border-radius: 3px 0 0 3px;
     font-size: 0.875rem;
+    padding: 0px 10px;
     position: relative;
     outline: 0;
   }
@@ -450,8 +454,9 @@ button[name=search2] {
   }
 }
 .navbar_logo {
-  max-width: 402px;
+  max-width: 392px;
   width: 100%;
+  padding: 10px;
 }
 
 .container_top, .container_bottom, .container-phone {
@@ -783,6 +788,32 @@ button[name=search2] {
   color: #ffffff;
 }
 
+.drop-box::before {
+  content: "";
+  right: 0;
+  min-width: 100vw;
+  max-width: 100vw;
+  display: block;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.drop-box::after {
+  content: "";
+  right: 0;
+  min-width: 100vw;
+  max-width: 100vw;
+  display: block;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .nav-item {
   border-left: 1px solid hsla(0deg, 0%, 100%, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
@@ -855,6 +886,10 @@ button[name=search2] {
 
 .training-menu {
   background-color: #d64541;
+}
+
+.container > ul > li.software-box > ul:after, .main-navigation .container > ul > li.software-box > ul:before {
+  background-color: #67809f;
 }
 
 a, a:hover {
