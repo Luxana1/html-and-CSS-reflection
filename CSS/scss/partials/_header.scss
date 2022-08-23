@@ -488,7 +488,7 @@ header {
   justify-content: flex-start;
   font-size: 13px;
   list-style-type: none;
-  filter: brightness(90%);
+  // filter: brightness(90%);
 }
 .drop-menu li {
   margin-left: 20px;
@@ -500,6 +500,16 @@ header {
   content: "-";
   padding-left: 20px;
 }
+
+@each $color in $colors {
+  .drop-menu::before, .drop-menu::after {
+    background-color: $color;
+  }
+  .drop-menu::before, .drop-menu::after {
+    background-color: darken($colors, 10%);
+  }
+}
+
 @media only screen and (min-width: $break-xl) {
   .drop-menu li {
     margin-left: 30px;

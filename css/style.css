@@ -836,7 +836,6 @@ button[name=search2] {
   justify-content: flex-start;
   font-size: 13px;
   list-style-type: none;
-  filter: brightness(90%);
 }
 
 .drop-menu li {
@@ -849,6 +848,30 @@ button[name=search2] {
 .drop-menu > li:not(:last-child) a:after {
   content: "-";
   padding-left: 20px;
+}
+
+.drop-menu::before, .drop-menu::after {
+  background-color: "support" #4183d7;
+}
+
+.drop-menu::before, .drop-menu::after {
+  background-color: "marketing" #2ecc71;
+}
+
+.drop-menu::before, .drop-menu::after {
+  background-color: "telecoms" #d64541;
+}
+
+.drop-menu::before, .drop-menu::after {
+  background-color: "design" #926fb1;
+}
+
+.drop-menu::before, .drop-menu::after {
+  background-color: "security" #f62459;
+}
+
+.drop-menu::before, .drop-menu::after {
+  background-color: "training" #926fb1;
 }
 
 @media only screen and (min-width: 1260px) {
