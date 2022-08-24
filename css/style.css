@@ -788,20 +788,7 @@ button[name=search2] {
   color: #ffffff;
 }
 
-.drop-box::before {
-  content: "";
-  right: 0;
-  min-width: 100vw;
-  max-width: 100vw;
-  display: block;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.drop-box::after {
+.drop-box::before, .drop-box::after {
   content: "";
   right: 0;
   min-width: 100vw;
@@ -845,33 +832,65 @@ button[name=search2] {
   font-weight: 400;
 }
 
-.drop-menu > li:not(:last-child) a:after {
+.list-unstyled > li:not(:last-child) a:after {
   content: "-";
   padding-left: 20px;
 }
 
-.drop-menu::before, .drop-menu::after {
-  background-color: "support" #4183d7;
+.software-menu {
+  background-color: #526781;
 }
 
-.drop-menu::before, .drop-menu::after {
-  background-color: "marketing" #2ecc71;
+.drop-menu:hover .software-box {
+  background-color: #67809f;
 }
 
-.drop-menu::before, .drop-menu::after {
-  background-color: "telecoms" #d64541;
+.support-menu {
+  background-color: #286abd;
 }
 
-.drop-menu::before, .drop-menu::after {
-  background-color: "design" #926fb1;
+.drop-menu:hover .support-box {
+  background-color: #4183d7;
 }
 
-.drop-menu::before, .drop-menu::after {
-  background-color: "security" #f62459;
+.marketing-menu {
+  background-color: #25a25a;
 }
 
-.drop-menu::before, .drop-menu::after {
-  background-color: "training" #926fb1;
+.drop-menu:hover .marketing-box {
+  background-color: #2ecc71;
+}
+
+.telecoms-menu {
+  background-color: #bc2c28;
+}
+
+.drop-menu:hover .telecoms-box {
+  background-color: #d64541;
+}
+
+.design-menu {
+  background-color: #79539a;
+}
+
+.drop-menu:hover .design-box {
+  background-color: #926fb1;
+}
+
+.security-menu {
+  background-color: #de093f;
+}
+
+.drop-menu:hover .security-box {
+  background-color: #f62459;
+}
+
+.training-menu {
+  background-color: #79539a;
+}
+
+.drop-menu:hover .training-box {
+  background-color: #926fb1;
 }
 
 @media only screen and (min-width: 1260px) {
@@ -883,34 +902,6 @@ button[name=search2] {
     padding-left: 30px;
   }
 }
-.software-menu {
-  background-color: #67809f;
-}
-
-.support-menu {
-  background-color: #4183d7;
-}
-
-.marketing-menu {
-  background-color: #2ecc71;
-}
-
-.telecoms-menu {
-  background-color: #d64541;
-}
-
-.design-menu {
-  background-color: #926fb1;
-}
-
-.security-menu {
-  background-color: #f62459;
-}
-
-.training-menu {
-  background-color: #d64541;
-}
-
 .container > ul > li.software-box > ul:after, .main-navigation .container > ul > li.software-box > ul:before {
   background-color: #67809f;
 }
