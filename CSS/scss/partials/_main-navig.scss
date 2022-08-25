@@ -205,3 +205,39 @@ svg, svg:hover {
     text-decoration: none;
     color: inherit;
 }
+
+//---------------------------style for About section-------------------------------------
+
+.about-section {
+    color: $white;
+    background-color: $color-bg;
+    letter-spacing: .4px;
+    padding: 50px 15px;
+    margin: 0 auto;
+    margin-left: -24px;
+    margin-right: -24px;
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin: 0 0 28px;
+        text-transform: uppercase;
+        line-height: 1.1;
+        margin-top: -6px;
+    }
+}
+.about-section p:first-of-type {
+    font-weight: 600;
+}
+.about-section p {
+    line-height: 1.875rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+    margin: 0 0 25px;
+}
+.about-section .btn {
+    background-color: $white;
+    color: $color-bg;
+    height: auto;
+    font-size: 1.063rem;
+    border-radius: 3px;
+}
