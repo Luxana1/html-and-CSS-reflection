@@ -241,3 +241,11 @@ svg, svg:hover {
     font-size: 1.063rem;
     border-radius: 3px;
 }
+@media only screen and (min-width: $break-l) {
+    .about-section {
+        background-image: url(../img/branded.png) ;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: auto 100%;
+    }
+}

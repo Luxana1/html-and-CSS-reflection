@@ -1405,6 +1405,14 @@ svg, svg:hover {
   border-radius: 3px;
 }
 
+@media only screen and (min-width: 992px) {
+  .about-section {
+    background-image: url(../img/branded.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+  }
+}
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
