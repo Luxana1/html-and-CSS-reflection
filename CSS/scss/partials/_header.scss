@@ -72,7 +72,6 @@ input[name=search2] {
   border-right: none;
   box-shadow: inset 0 0.875px rgb(0 0 0 / 10%);
   height: 47px;
-  border-radius: 3px 0 0 3px;
   padding-left: 10px;
   font-size: 0.875rem;
   font-weight: 400;
@@ -429,15 +428,15 @@ header {
 }
 //training box
 .training-btn .icon {
-  color: $strawberry;
+  color: $purple;
 }
 .training-btn svg {
   @include main-nav-item;
-  color: $strawberry;
+  color: $purple;
 }
 .training-btn:hover {
   color: $white;
-  background-color: $strawberry;
+  background-color: $purple;
 }
 .training-btn:hover svg, .training:hover .btn {
   color: $white;
@@ -496,8 +495,11 @@ header {
     background-color: darken($color, 10%);
     
   }
-  .drop-menu:hover .#{$keycolor}-box {
+ .#{$keycolor}-box:hover {
     background-color: $color;
+    svg{
+      color: $white;
+    }
   }
 }
 
@@ -509,33 +511,6 @@ header {
     content: "-";
     padding-left: 30px;
   }
-}
-
-//---------------------------------7 menu buttons colors-------------------------------
-// .software-menu {
-//   background-color: $grayblue;
-// }
-// .support-menu {
-//   background-color: $blue;
-// }
-// .marketing-menu {
-//   background-color: $green;
-// }
-// .telecoms-menu {
-//   background-color: $strawberry;
-// }
-// .design-menu {
-//   background-color: $purple;
-// }
-// .security-menu {
-//   background-color: $rasberry;
-// }
-// .training-menu {
-//   background-color: $strawberry;
-// } 
-
-.container>ul>li.software-box>ul:after, .main-navigation .container>ul>li.software-box>ul:before {
-  background-color: $grayblue;
 }
 
 //---------------------------anchor and anchor hover effect----------------------------

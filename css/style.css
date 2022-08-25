@@ -360,7 +360,6 @@ input[name=search2] {
   border-right: none;
   box-shadow: inset 0 0.875px rgba(0, 0, 0, 0.1);
   height: 47px;
-  border-radius: 3px 0 0 3px;
   padding-left: 10px;
   font-size: 0.875rem;
   font-weight: 400;
@@ -765,7 +764,7 @@ button[name=search2] {
 }
 
 .training-btn .icon {
-  color: #d64541;
+  color: #926fb1;
 }
 
 .training-btn svg {
@@ -776,12 +775,12 @@ button[name=search2] {
   margin-bottom: 17px;
   font-size: 23px;
   line-height: 60px;
-  color: #d64541;
+  color: #926fb1;
 }
 
 .training-btn:hover {
   color: #ffffff;
-  background-color: #d64541;
+  background-color: #926fb1;
 }
 
 .training-btn:hover svg, .training:hover .btn {
@@ -841,56 +840,77 @@ button[name=search2] {
   background-color: #526781;
 }
 
-.drop-menu:hover .software-box {
+.software-box:hover {
   background-color: #67809f;
+}
+.software-box:hover svg {
+  color: #ffffff;
 }
 
 .support-menu {
   background-color: #286abd;
 }
 
-.drop-menu:hover .support-box {
+.support-box:hover {
   background-color: #4183d7;
+}
+.support-box:hover svg {
+  color: #ffffff;
 }
 
 .marketing-menu {
   background-color: #25a25a;
 }
 
-.drop-menu:hover .marketing-box {
+.marketing-box:hover {
   background-color: #2ecc71;
+}
+.marketing-box:hover svg {
+  color: #ffffff;
 }
 
 .telecoms-menu {
   background-color: #bc2c28;
 }
 
-.drop-menu:hover .telecoms-box {
+.telecoms-box:hover {
   background-color: #d64541;
+}
+.telecoms-box:hover svg {
+  color: #ffffff;
 }
 
 .design-menu {
   background-color: #79539a;
 }
 
-.drop-menu:hover .design-box {
+.design-box:hover {
   background-color: #926fb1;
+}
+.design-box:hover svg {
+  color: #ffffff;
 }
 
 .security-menu {
   background-color: #de093f;
 }
 
-.drop-menu:hover .security-box {
+.security-box:hover {
   background-color: #f62459;
+}
+.security-box:hover svg {
+  color: #ffffff;
 }
 
 .training-menu {
   background-color: #79539a;
 }
 
-.drop-menu:hover .training-box {
+.training-box:hover {
   background-color: #926fb1;
+}
+.training-box:hover svg {
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 1260px) {
@@ -902,10 +922,6 @@ button[name=search2] {
     padding-left: 30px;
   }
 }
-.container > ul > li.software-box > ul:after, .main-navigation .container > ul > li.software-box > ul:before {
-  background-color: #67809f;
-}
-
 a, a:hover {
   text-decoration: none;
   color: inherit;
