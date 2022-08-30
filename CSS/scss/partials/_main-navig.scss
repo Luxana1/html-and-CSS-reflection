@@ -251,4 +251,19 @@ svg, svg:hover {
 }
 
 //---------------------------style for Latest News section-------------------------------------         
-                                
+.news {
+    padding-top: 50px;
+}     
+.latest {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin: 0 0 28px;
+        color: $color-bg;
+    }
+}     
+.latest-news {
+    box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+}                      
