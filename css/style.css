@@ -291,6 +291,10 @@ label a {
   justify-content: space-around;
 }
 
+img, svg {
+  vertical-align: unset;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 750px;

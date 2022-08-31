@@ -8,6 +8,9 @@
   justify-content: space-around;
 }
 //-------------------------------------general container style----------------------------
+img, svg {
+  vertical-align: unset;
+}
 
 .container {
   @media only screen and (min-width: $break-m) {
