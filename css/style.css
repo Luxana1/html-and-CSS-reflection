@@ -291,6 +291,10 @@ label a {
   justify-content: space-around;
 }
 
+img, svg {
+  vertical-align: unset;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 750px;
@@ -1372,10 +1376,8 @@ svg, svg:hover {
   color: #ffffff;
   background-color: #333645;
   letter-spacing: 0.4px;
-  padding: 50px 15px;
+  padding: 50px 25px;
   margin: 0 auto;
-  margin-left: -24px;
-  margin-right: -24px;
 }
 .about-section h2 {
   font-size: 2.25rem;
@@ -1415,6 +1417,8 @@ svg, svg:hover {
 }
 .news {
   padding-top: 50px;
+  color: #ffffff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
 .latest {
@@ -1422,13 +1426,22 @@ svg, svg:hover {
   justify-content: space-between;
 }
 .latest h3 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  margin: 0 0 28px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-top: 40px;
   color: #333645;
+  text-transform: uppercase;
+}
+.latest h3::after {
+  content: "";
+  display: block;
+  background-color: #333645;
+  margin-top: 10px;
+  height: 5px;
+  width: 72px;
 }
 
-.latest-news {
+.section {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
