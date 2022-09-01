@@ -275,10 +275,37 @@ svg, svg:hover {
 }  
 .news-list {
     box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
-}     
-.img-container {
+}  
+.news-img {
     width: 100%;
     height: auto;
-    overflow: hidden;
     margin-bottom: 25px;
-}             
+}        
+.tag {
+    position: absolute;
+    right: 0;
+    color: $white;
+    top: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+.color-1 {
+    background-color: $strawberry;
+}
+.color-2 {
+    background-color: $purple;
+}
+.news-text h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 10px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.text-color-1 {
+    color: $strawberry;
+}
+.text-color-2 {
+    color: $purple;
+}
