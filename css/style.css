@@ -331,7 +331,6 @@ header {
 .outer {
   max-width: none;
   margin: auto;
-  height: 110px;
   width: 100%;
 }
 
@@ -1441,8 +1440,15 @@ svg, svg:hover {
   width: 72px;
 }
 
-.section {
+.news-list {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 /*!
