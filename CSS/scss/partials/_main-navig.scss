@@ -273,7 +273,9 @@ svg, svg:hover {
         width: 72px;
     }
 }  
-.news-list {
+.list {
+    margin-top: 0;
+    margin-bottom: 20px;
     box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
 }  
 .news-img {
@@ -295,6 +297,14 @@ svg, svg:hover {
 }
 .color-2 {
     background-color: $purple;
+}
+.news-text {
+    padding: 20px 30px;
+    border: 1px solid lightgrey;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0 0 3px 3px;
+    flex-grow: 1;
 }
 .news-text h3 {
     font-size: 1rem;
