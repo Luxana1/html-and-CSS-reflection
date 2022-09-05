@@ -1427,7 +1427,31 @@ svg, svg:hover {
   height: 5px;
   width: 72px;
 }
+@media only screen and (min-width: 1260px) {
+  .news::after {
+    margin: 10px 65px 50px;
+  }
+}
 
+@media only screen and (min-width: 0px) {
+  .news-list {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .news-list > :last-child {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  .news-list > :last-child {
+    display: block;
+  }
+}
 .latest {
   display: flex;
   justify-content: space-between;
@@ -1436,14 +1460,21 @@ svg, svg:hover {
   font-size: 1.25rem;
   font-weight: 600;
   padding-top: 40px;
+  margin: 20px 0;
   color: #333645;
   text-transform: uppercase;
 }
 
-.list {
-  margin-top: 0;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+@media only screen and (min-width: 0px) {
+  .list {
+    margin: -10px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .list {
+    margin: 0 15px 20px;
+  }
 }
 
 .news-img {
@@ -1479,9 +1510,10 @@ svg, svg:hover {
   text-transform: capitalize;
 }
 .news-text p {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
   font-weight: 400;
+  color: #666;
 }
 
 .text-color-1 {
@@ -1505,7 +1537,7 @@ svg, svg:hover {
 }
 
 .news-text .btn {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .user::before {
