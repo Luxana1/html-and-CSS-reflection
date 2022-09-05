@@ -1540,6 +1540,18 @@ svg, svg:hover {
   margin: 20px 0;
 }
 
+.news-text .btn:hover {
+  color: #ffffff;
+}
+
+.news-text .btn-color-1:hover {
+  background-color: #be3c38;
+}
+
+.news-text .btn-color-2:hover {
+  background-color: #80629b;
+}
+
 .user::before {
   content: "";
   display: block;
