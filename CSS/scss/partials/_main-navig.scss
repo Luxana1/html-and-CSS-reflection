@@ -250,10 +250,17 @@ svg, svg:hover {
 
 //---------------------------style for Latest News section-------------------------------------         
 .news {
-    padding-top: 50px;
     color: $white;
     box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
-}     
+}   
+.news::after {
+    content: '';
+    display: block;
+    background-color: $color-bg;
+    margin: 10px 25px 50px;
+    height: 5px;
+    width: 72px;
+}  
 .latest {
     display: flex;
     justify-content: space-between;
@@ -263,14 +270,6 @@ svg, svg:hover {
         padding-top: 40px;
         color: $color-bg;
         text-transform: uppercase;
-    }
-    h3::after {
-        content: '';
-        display: block;
-        background-color: $color-bg;
-        margin-top: 10px;
-        height: 5px;
-        width: 72px;
     }
 }  
 .list {
@@ -282,6 +281,7 @@ svg, svg:hover {
     width: 100%;
     height: auto;
     margin-bottom: 25px;
+    border-radius: 0.25rem 0.25rem 0 0;
 }        
 .tag {
     position: absolute;
@@ -292,12 +292,6 @@ svg, svg:hover {
     text-transform: uppercase;
     font-size: .75rem;
 }
-.color-1 {
-    background-color: $strawberry;
-}
-.color-2 {
-    background-color: $purple;
-}
 .news-text {
     padding: 20px 30px;
     border: 1px solid lightgrey;
@@ -305,17 +299,58 @@ svg, svg:hover {
     border-bottom: 0;
     border-radius: 0 0 3px 3px;
     flex-grow: 1;
-}
-.news-text h3 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 10px 0;
-    font-weight: 600;
-    text-transform: capitalize;
+    h3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 10px 0;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    p {
+        font-size: .875rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
 }
 .text-color-1 {
     color: $strawberry;
 }
 .text-color-2 {
     color: $purple;
+}
+// colour for buttons and tags
+.btn-color-1, .color-1 {
+    background-color: $strawberry;
+}
+.btn-color-2, .color-2 {
+    background-color: $purple;
+}
+.btn-color-1, .btn-color-2 {
+    color: $white;
+}
+.news-text .btn {
+    margin: 10px 0;
+}
+.user::before {
+    content: '';
+    display: block;
+    background-color: grey;
+    margin-top: 10px;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.avatar {
+    position: absolute;
+}
+.details {
+    position: relative;
+    margin-left: 70px;
+    .strong {
+        color: $color-text-primary;
+        font-weight: 600;
+    }
+    span {
+        font-size: .875rem;
+    }
 }

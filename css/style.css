@@ -1415,9 +1415,17 @@ svg, svg:hover {
   }
 }
 .news {
-  padding-top: 50px;
   color: #ffffff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.news::after {
+  content: "";
+  display: block;
+  background-color: #333645;
+  margin: 10px 25px 50px;
+  height: 5px;
+  width: 72px;
 }
 
 .latest {
@@ -1431,14 +1439,6 @@ svg, svg:hover {
   color: #333645;
   text-transform: uppercase;
 }
-.latest h3::after {
-  content: "";
-  display: block;
-  background-color: #333645;
-  margin-top: 10px;
-  height: 5px;
-  width: 72px;
-}
 
 .list {
   margin-top: 0;
@@ -1450,6 +1450,7 @@ svg, svg:hover {
   width: 100%;
   height: auto;
   margin-bottom: 25px;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .tag {
@@ -1462,14 +1463,6 @@ svg, svg:hover {
   font-size: 0.75rem;
 }
 
-.color-1 {
-  background-color: #d64541;
-}
-
-.color-2 {
-  background-color: #926fb1;
-}
-
 .news-text {
   padding: 20px 30px;
   border: 1px solid lightgrey;
@@ -1478,13 +1471,17 @@ svg, svg:hover {
   border-radius: 0 0 3px 3px;
   flex-grow: 1;
 }
-
 .news-text h3 {
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 10px 0;
   font-weight: 600;
   text-transform: capitalize;
+}
+.news-text p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
 }
 
 .text-color-1 {
@@ -1493,6 +1490,48 @@ svg, svg:hover {
 
 .text-color-2 {
   color: #926fb1;
+}
+
+.btn-color-1, .color-1 {
+  background-color: #d64541;
+}
+
+.btn-color-2, .color-2 {
+  background-color: #926fb1;
+}
+
+.btn-color-1, .btn-color-2 {
+  color: #ffffff;
+}
+
+.news-text .btn {
+  margin: 10px 0;
+}
+
+.user::before {
+  content: "";
+  display: block;
+  background-color: grey;
+  margin-top: 10px;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  position: absolute;
+}
+
+.details {
+  position: relative;
+  margin-left: 70px;
+}
+.details .strong {
+  color: #333645;
+  font-weight: 600;
+}
+.details span {
+  font-size: 0.875rem;
 }
 
 /*!
