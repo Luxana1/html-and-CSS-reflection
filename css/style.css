@@ -1455,6 +1455,7 @@ svg, svg:hover {
 .latest {
   display: flex;
   justify-content: space-between;
+  margin-left: 25px;
 }
 .latest h3 {
   font-size: 1.25rem;
