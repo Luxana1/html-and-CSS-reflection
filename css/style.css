@@ -113,6 +113,7 @@
 /* Base -------------------------------*/
 .newsletter {
   background-color: #d3d4d4;
+  padding: 20px;
 }
 
 legend {
@@ -126,7 +127,6 @@ legend {
 
 form {
   font-family: Poppins, sans-serif;
-  padding: 20px;
 }
 
 .form-group {
@@ -147,6 +147,7 @@ input[type=checkbox] {
   height: 32px;
   width: 32px;
   border: 3px solid #333645;
+  background-color: #d3d4d4;
 }
 
 input[type=checkbox]:hover {
@@ -1436,6 +1437,7 @@ svg, svg:hover {
 @media only screen and (min-width: 0px) {
   .news-list {
     display: block;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 768px) {
