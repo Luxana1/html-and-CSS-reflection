@@ -113,7 +113,7 @@
 /* Base -------------------------------*/
 .newsletter {
   background-color: #d3d4d4;
-  padding: 20px;
+  padding: 35px;
 }
 
 legend {
@@ -161,6 +161,7 @@ input[type=checkbox]:hover {
 }
 
 .form-check-label {
+  font-weight: 600;
   line-height: 32px;
   cursor: pointer;
   margin-left: 30px;
@@ -172,7 +173,7 @@ input[type=checkbox]:hover {
 }
 
 label {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 label a {
@@ -290,6 +291,7 @@ label a {
   letter-spacing: 0.4px;
   flex-direction: row;
   justify-content: space-around;
+  font-family: Poppins, sans-serif;
 }
 
 img, svg {

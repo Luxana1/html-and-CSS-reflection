@@ -5,7 +5,7 @@
 //------------------------------Email newsletter container--------------------------------
 .newsletter {
     background-color: $color-bg-light;
-    padding: 20px;
+    padding: 35px;
 }
 legend {
     font-size: 32px;
@@ -46,6 +46,7 @@ input[type=checkbox]:hover {
     box-shadow: none;
   }
 .form-check-label {
+    font-weight: 600;
     line-height: 32px;
     cursor: pointer;
     margin-left: 30px;
@@ -55,7 +56,7 @@ input[type=checkbox]:hover {
     border-color: $color-bg;
 }
 label {
-    font-weight: bold;
+    font-weight: 500;
 }
 label a {
     text-decoration: underline;
