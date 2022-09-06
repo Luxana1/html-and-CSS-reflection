@@ -16,8 +16,7 @@ footer h4 {
 .footer-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 40px;
+    justify-content: space-between;
 }
 
 //----------------------------------------------services and offices---------------------------------
@@ -26,6 +25,9 @@ footer h4 {
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: space-evenly;
+    margin: 0 -30px;
+}.services{
+    justify-content: flex-start;
 }
 .service, .office {
     width: 225px;
@@ -52,26 +54,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-@media (min-width: $break-xs) {
-    footer .container .footer-row{
-        max-width: 480px;
-        margin: 0 auto;
-        .services, .offices {
-            flex-direction: row;
-            justify-content: space-evenly;
-            .service, .office{
-                width: 225px;
-            }
-        }
-        .offices {
-            flex-wrap: wrap;
-        }
-    }
-}
-
 //--------------------------footer bottom: licence, sitemap and social media---------------------------
 .bottom {
-    margin: 0 40px;
+    margin: 0 -30px;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #888;
