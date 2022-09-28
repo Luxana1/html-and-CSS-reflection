@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
     <link href="hamburgers/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/icon-netmatters.png">
     <title>
@@ -346,9 +348,60 @@
     <div class="banner" role="banner">
         <div class="banner_container">
             <div class="hero-container-img">
-                <div class="item">
-                    <div class="img-cover">
+                <div class="slides">
+                    <div class="slide 1">
                         <img src="img/home-3wAI.jpg" alt="office work">
+                        <div class="content">
+                            <div class="content_container container">
+                                <h1 class="hero_text hero_1">Web Design</h1>
+                                <h2 class="hero_text hero_2">For businesses looking to make a strong<br>and effective first impression.</h2>
+                                <button class="btn btn-hero">
+                                    Find out more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="slides">
+                    <div class="slide 2">
+                        <img src="img/home-57sJ.webp" alt="office work">
+                        <div class="content">
+                            <div class="content_container container">
+                                <h1 class="hero_text hero_1">IT Support</h1>
+                                <h2 class="hero_text hero_2">Fast and cost-effective IT support<br>services for your business.</h2>
+                                <button class="btn btn-hero">
+                                    Find out more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="slides">
+                    <div class="slide 3">
+                        <img src="img/home-5yqm.webp" alt="office work">
+                        <div class="content">
+                            <div class="content_container container">
+                                <h1 class="hero_text hero_1">Telecoms Services</h1>
+                                <h2 class="hero_text hero_2">A new approach to connectivity, see how <br>we can help your business.</h2>
+                                <button class="btn btn-hero">
+                                    Find out more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="slides">
+                    <div class="slide 4">
+                        <img src="img/home-sqvx.webp" alt="office work">
                         <div class="content">
                             <div class="content_container container">
                                 <h1 class="hero_text hero_1">Bespoke Software</h1>
@@ -360,73 +413,39 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="banner-dots">
-                                <div class="dot">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-                                          </svg>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record2-fill" viewBox="0 0 16 16">
-                                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                                            <path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg>
-                                    </span>
-                                </div>
-                                <div class="dot">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-                                          </svg>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record2-fill" viewBox="0 0 16 16">
-                                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                                            <path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg>
-                                    </span>
-                                </div>
-                                <div class="dot">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-                                          </svg>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record2-fill" viewBox="0 0 16 16">
-                                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                                            <path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg>
-                                    </span>
-                                </div>
-                                <div class="dot">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-                                          </svg>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record2-fill" viewBox="0 0 16 16">
-                                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                                            <path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg>
-                                    </span>
-                                </div>
-                                <div class="dot">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-                                          </svg>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record2-fill" viewBox="0 0 16 16">
-                                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                                            <path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg>
-                                    </span>
-                                </div>
-                                <div class="dot">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-                                          </svg>
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record2-fill" viewBox="0 0 16 16">
-                                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                                            <path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg>
-                                    </span>
-                                </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="slides">
+                    <div class="slide 5">
+                        <img src="img/home-JQsO.webp" alt="office work">
+                        <div class="content">
+                            <div class="content_container container">
+                                <h1 class="hero_text hero_1">Digital Marketing</h1>
+                                <h2 class="hero_text hero_2">Generating you new business through<br>results-driven marketing activities.</h2>
+                                <button class="btn btn-hero">
+                                    Find out more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="slides">
+                    <div class="slide 6">
+                        <img src="img/home-lQs1.webp" alt="office work">
+                        <div class="content">
+                            <div class="content_container container">
+                                <h1 class="hero_text hero_1">Cyber Security</h1>
+                                <h2 class="hero_text hero_2">Keeping businesses and their customers<br>sensitive information protected.</h2>
+                                <button class="btn btn-hero">
+                                    Find out more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>   
@@ -932,5 +951,11 @@
     </footer>
     <script src="js/side-menu.js"></script> 
     <script src="js/carousel.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>	
+    <script>
+        $('.slides').slick();
+    </script>			
 </body>
 </html>
