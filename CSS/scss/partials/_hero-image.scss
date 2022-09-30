@@ -18,16 +18,16 @@
 //     align-items: center;
 //     overflow: hidden;
 // }
-.content_container {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.436));
-    z-index: 3;
-}
+// .content::before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.436));
+//     z-index: 3;
+// }
 .content {
     position: absolute;
     display: flex;
@@ -36,8 +36,9 @@
     top: 0;
     height: 100%;
     width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.436));
 }
-.banner .content_container {
+.banner .content_container { 
     text-align: center;
     z-index: 4;
 }
