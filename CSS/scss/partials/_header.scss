@@ -7,6 +7,14 @@
   justify-content: space-around;
   font-family: $font-family;
 }
+.wrapper {
+  width: 100%;
+  z-index: 1;
+  background-color: $white;
+  overflow-y: scroll;
+  overflow-x: initial;
+  height: 100vh;
+}
 //-------------------------------------general container style----------------------------
 img, svg {
   vertical-align: unset;
@@ -520,4 +528,41 @@ header {
 a, a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+//-----------------------sidebar styling-------------------------------------
+#sidebar {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 100vh;
+  background-color: $color-bg;
+  color: white;
+  z-index: 100;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-y: scroll;
+  .sidebar-content {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    li {
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+    li > a {
+      font-size: 1.125rem;
+      line-height: 25.7143px;
+      padding: 19px 0 18px;
+      display: block;
+      border-radius: 3px;
+      outline: 1px solid rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+.left {
+  position: absolute;
+  animation: s-left 0.5s forwards;
 }
