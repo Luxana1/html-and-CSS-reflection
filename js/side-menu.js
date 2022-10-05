@@ -3,26 +3,28 @@ const hamburger = document.querySelector(".hamburger");
 
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("is-active");
-    });
+});
 
 //function to open and close the side menu
 const sideMenu = document.getElementById("sideMenu");
-const mainContent = document.getElementById("mainContent");
-const mainContentOverlay = document.getElementById("mainContentOverlay");
 const body = document.getElementsByClassName("wrapper");
+const sidebar = document.getElementById("sidebar");
+const main = document.getElementById("main");
 
 function openNav() {
-    sideMenu.classList.add("is-active");
-    mainContent.classList.add("inactive");
-    body.style.overflow = "hidden";
-    mainContentOverlay.style.width = "100%";
-    mainContentOverlay.style.opacity = "1";
+    body[0].style.overflow = "hidden";
+    sidebar.style.display = "block";
+    main.style.left = "-300px";
+    main.style.position = "absolute";
+    main.style.width = "100%";
+    sideMenu.style.cssText = "display: block; left: -275px";
 }
 
 function closeNav() {
-    sideMenu.classList.remove("is-active");
-    mainContent.classList.remove("inactive");
-    body.style.overflow = "auto";
-    mainContentOverlay.style.width = "0%";
-    mainContentOverlay.style.opacity = "0";
+    body[0].style.overflow = "auto";
+    sidebar.style.display = "none";
+    main.style.left = "0px";
+    sideMenu.style.cssText = "display: none; left: 0px";
+    console.log("I hope, it works");
+    hamburger.classList.toggle("is-active");
 }

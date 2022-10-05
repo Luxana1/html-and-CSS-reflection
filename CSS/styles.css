@@ -275,6 +275,11 @@ label a {
   height: 100vh;
 }
 
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 img, svg {
   vertical-align: unset;
 }
@@ -303,6 +308,10 @@ header {
   z-index: 1;
   text-align: center;
   background-color: #ffffff;
+  transition: transform 0.5s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .container {
@@ -918,7 +927,7 @@ a, a:hover {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 275px;
   height: 100vh;
   background-color: #333645;
@@ -951,6 +960,18 @@ a, a:hover {
   position: absolute;
   -webkit-animation: s-left 0.5s forwards;
           animation: s-left 0.5s forwards;
+}
+
+#sideMenu {
+  position: absolute;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  opacity: 0.6;
+  background-color: black;
+  transition: width 2s linear;
 }
 
 .top-footer {
@@ -1682,4 +1703,76 @@ svg, svg:hover {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#modal .modal-content {
+  background: #fff;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+#modal .modal-content .modal-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#modal .modal-content .modal-header .modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+  font-size: 1.625rem;
+}
+#modal .modal-content .modal-body {
+  margin-top: 20px;
+  padding: 20px;
+}
+#modal .modal-content .modal-body .modal-text {
+  line-height: 1.875rem;
+  margin: 0 0 1.5rem;
+  color: #666;
+}
+#modal .modal-content .modal-footer {
+  display: block;
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+}
+#modal .modal-content .modal-footer .btn {
+  display: block;
+}
+#modal .modal-content .modal-footer .btn-top {
+  color: white;
+  background-color: #999aa2;
+  border-color: #999aa2;
+  margin-bottom: 30px;
+}
+#modal .modal-content .modal-footer .btn-top:hover {
+  color: white;
+  background-color: #84858f;
+  border-color: #84858f;
+}
+#modal .modal-content .modal-footer .btn-bottom {
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+#modal .modal-content .modal-footer .btn-bottom:hover {
+  color: white;
+  background-color: #6c4f9d;
+  border-color: #6c4f9d;
 }/*# sourceMappingURL=styles.css.map */

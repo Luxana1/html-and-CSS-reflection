@@ -21,7 +21,8 @@
     </title>
 </head>
 <body class="wrapper" style="overflow: auto;">
-    <div id="sideMenu" onclick="closeNav()"></div>
+    <div id="sideMenu" onclick="closeNav()">
+    </div>
     <div id="popUpNav">
         <!-- main side menu, this will be used for a side bars menu -->
         <section id="sidebar" class="overlay">
@@ -140,10 +141,8 @@
             </div>
         </section> 
     </div>
-    <div id="mainContent">
-        <div id="mainContentOverlay" class="overlay" onclick="closeNav()"></div>
-    </div>
-    <!-- Header for all screens view -->
+    <div id="main">
+        <!-- Header for all screens view -->
     <header id="sticky">
         <div class="outer">
             <div class="inner">
@@ -771,7 +770,6 @@
                 </li>
             </ul>               
         </div>
-    </div>
     <div class="newsletter">
         <h2 class="sr-only">Newsletter</h2>
         <div class="container">
@@ -951,8 +949,40 @@
             </div>            
         </div> 
     </footer>
+    </div>
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Cookies Policy</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-text">
+                    We use cookies to obtain aggregate data regarding site traffic and interaction, in order to
+                    identify user trends and obtain insights in order to continually improve our site. These
+                    cookies enable us to improve your customer experience as you use our site and help provide
+                    you with relevant online marketing.
+                </p>
+                <p class="modal-text" style="margin-bottom: 0;">
+                    You can see a list of the other companies who use cookies on this website, by visiting cookie
+                    settings at the bottom of each page. For full details of how we use your personal information,
+                    and your rights in relation to it, view our privacy policy.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-md-6 spacer">
+                        <a class="btn btn-top settings" href="#">Change Settings</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-bottom accept" href="#">Accept Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/side-menu.js"></script> 
     <script src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>	
