@@ -9,18 +9,8 @@ function acceptCookies() {
 if (localStorage.getItem("cookies") === "accepted") {
     modal.style.display = "none";
 } else {
-    modal.style.display = "block";
+    modal.style.display = "grid";
 }   
 
 acceptButton.addEventListener("click", acceptCookies);
-
-// place modal in the center of the screen
-
-function centerModal(modal) {
-    const modalHeight = modal.offsetHeight;
-    const modalWidth = modal.offsetWidth;
-    modal.style.top = `calc(50% - ${modalHeight / 2}px)`;
-    modal.style.left = `calc(50% - ${modalWidth / 2}px)`;
-} 
-
-
+console.log("Copilot AI is the best thing ever!");
