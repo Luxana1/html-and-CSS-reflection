@@ -1,10 +1,16 @@
+let lastSt = 0;
+let time = Date.now();
 
-const header = document.getElementById("sticky");
-    const sticky = header.offsetTop;
-    window.onscroll = function() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
+
+$(document).scroll(() => {
+    let st = $(document).scrollTop();
+    if (Date.now() > time) {
+        if (st > lastSt) {
+            $("#sticky").slideUp();
         } else {
-            header.classList.remove("sticky");
+            $("#sticky").slideDown();
         }
-    }; 
+        time = Date.now() + 500;
+    }
+    lastSt = st;
+});

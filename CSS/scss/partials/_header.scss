@@ -543,7 +543,8 @@ a, a:hover {
   display: none;
   position:fixed;
   top: 0;
-  right: 0;
+  right: -275px;
+  left: -33px;
   width: 275px;
   height: 100vh;
   background-color: $color-bg;
@@ -576,7 +577,7 @@ a, a:hover {
   animation: s-left 0.5s forwards;
 }
 #sideMenu {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 0;
   width: 100%;
@@ -584,6 +585,5 @@ a, a:hover {
   z-index: 101;
   opacity: 0.6;
   background-color: black;
-  transition: width 2s linear;
 }
 

@@ -14,7 +14,13 @@ const main = document.getElementById("main");
 function openNav() {
     body[0].style.overflow = "hidden";
     sidebar.style.display = "block";
-    main.style.left = "-300px";
+    // main.style.left = "-300px";
+    $("#main").animate({ 
+        left: "-=300"
+    }, 500)
+    $("#sidebar").animate({
+        left: "+=300"
+    }, 500)
     main.style.position = "absolute";
     main.style.width = "100%";
     sideMenu.style.cssText = "display: block; left: -275px";
@@ -23,7 +29,13 @@ function openNav() {
 function closeNav() {
     body[0].style.overflow = "auto";
     sidebar.style.display = "none";
-    main.style.left = "0px";
+    // main.style.left = "0px";
+    $("#main").animate({ 
+        left: "+=300"
+    }, 500)
+    $("#sidebar").animate({
+        left: "-=300"
+    }, 500)
     sideMenu.style.cssText = "display: none; left: 0px";
     console.log("I hope, it works");
     hamburger.classList.toggle("is-active");
