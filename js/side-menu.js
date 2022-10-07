@@ -31,11 +31,11 @@ function closeNav() {
     sidebar.style.display = "none";
     // main.style.left = "0px";
     $("#main").animate({ 
-        left: "+=300"
+        left: "+=350"
     }, 500)
-    $("#sidebar").animate({
-        left: "-=300"
-    }, 500)
+    // $("#sidebar").animate({
+    //     left: "-=350"
+    // }, 500)
     sideMenu.style.cssText = "display: none; left: 0px";
     console.log("I hope, it works");
     hamburger.classList.toggle("is-active");
