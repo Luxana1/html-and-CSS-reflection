@@ -16,14 +16,14 @@ function openNav() {
     sidebar.style.display = "block";
     // main.style.left = "-300px";
     $("#main").animate({ 
-        left: "-=300"
+        left: "-=350"
     }, 500)
-    $("#sidebar").animate({
-        left: "+=300"
-    }, 500)
+    // $("#sidebar").animate({
+    //     left: "+=300"
+    // }, 500)
     main.style.position = "absolute";
     main.style.width = "100%";
-    sideMenu.style.cssText = "display: block; left: -275px";
+    sideMenu.style.cssText = "display: block; left: -350px";
 }
 
 function closeNav() {

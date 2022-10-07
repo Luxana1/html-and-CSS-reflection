@@ -543,9 +543,9 @@ a, a:hover {
   display: none;
   position:fixed;
   top: 0;
-  right: -275px;
-  left: -33px;
-  width: 275px;
+  right: 0px;
+  // left: -33px;
+  width: 350px;
   height: 100vh;
   background-color: $color-bg;
   color: white;
