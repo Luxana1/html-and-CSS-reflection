@@ -309,7 +309,6 @@ header {
   text-align: center;
   background-color: #ffffff;
   transition: transform 0.5s;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -797,7 +796,7 @@ button[name=search2] {
 }
 
 .nav-item {
-  border-left: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  border-left: 1px solid hsla(0, 0%, 100%, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
@@ -958,8 +957,7 @@ a, a:hover {
 
 .left {
   position: absolute;
-  -webkit-animation: s-left 0.5s forwards;
-          animation: s-left 0.5s forwards;
+  animation: s-left 0.5s forwards;
 }
 
 #sideMenu {
@@ -1092,6 +1090,24 @@ footer .bottom .social-media a:hover.linkedin {
   display: none;
 }
 
+@media only screen and (min-width: 0px) {
+  .services, .offices {
+    justify-content: center;
+  }
+  .bottom {
+    display: block;
+  }
+  .social-media {
+    margin: 20px 0;
+  }
+  footer a {
+    margin: 0 5px;
+  }
+  .licence span {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .bottom-footer {
     padding: 50px 0;
@@ -1400,6 +1416,12 @@ svg, svg:hover {
   color: inherit;
 }
 
+@media only screen and (min-width: 0px) {
+  .about-section h2 {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
 .about-section {
   color: #ffffff;
   background-color: #333645;
@@ -1413,7 +1435,6 @@ svg, svg:hover {
   margin: 0 0 28px;
   text-transform: uppercase;
   line-height: 1.1;
-  margin-top: -6px;
 }
 
 .about-section p:first-of-type {
@@ -1500,6 +1521,7 @@ svg, svg:hover {
   .list {
     margin: -10px;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 768px) {

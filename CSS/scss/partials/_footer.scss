@@ -106,6 +106,24 @@ footer .bottom .social-media a:hover.linkedin {
 .bottom-futter, .partnersbadge ul {
     display: none;
 }
+@media only screen and (min-width: $break-xs) {
+    .services, .offices {
+        justify-content: center;
+    }
+    .bottom {
+        display: block;
+    }
+    .social-media {
+        margin: 20px 0;
+    }
+    footer a {
+        margin: 0 5px;
+    }
+    .licence span {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 @media only screen and (min-width: $break-m) {
     .bottom-footer {
         padding: 50px 0;

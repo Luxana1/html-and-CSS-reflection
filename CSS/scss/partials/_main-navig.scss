@@ -208,6 +208,13 @@ svg, svg:hover {
 
 //---------------------------style for About section-------------------------------------
 
+@media only screen and (min-width: $break-xs) {
+    .about-section h2 {
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
 .about-section {
     color: $white;
     background-color: $color-bg;
@@ -220,7 +227,6 @@ svg, svg:hover {
         margin: 0 0 28px;
         text-transform: uppercase;
         line-height: 1.1;
-        margin-top: -6px;
     }
 }
 .about-section p:first-of-type {
@@ -302,6 +308,7 @@ svg, svg:hover {
     @media only screen and (min-width: $break-xs) {
         margin: -10px;
         box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+        margin-bottom: 25px;
     }
     @media only screen and (min-width: $break-m) {
         margin: 0 15px 20px;
